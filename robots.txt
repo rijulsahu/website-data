@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Allow access to CSS and JS files
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+
+# Disallow access to sensitive files
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /assets/vendor/
+
+# Sitemap location
+Sitemap: https://rijul.cloud/sitemap.xml
+
+# Crawl delay (optional - helps prevent server overload)
+Crawl-delay: 1

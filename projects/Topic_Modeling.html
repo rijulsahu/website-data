@@ -6,12 +6,13 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Topic Modelling and Text Classification Machine Learning Solution</title>
-    <meta content="" name="descriptison">
+    <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="../assets/img/favicon.png" rel="icon">
-    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="../assets/img/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
 
     <!-- Google Fonts -->
     <link
@@ -32,6 +33,7 @@
         body {
             font-family: sans-serif;
         }
+
         h4 {
             font-family: sans-serif;
         }
@@ -66,104 +68,87 @@
                     <div class="row" style="text-align: center;">
                         <div class="col-lg-10" style="margin: auto;">
                             <a href="../index.html">
-                                <h3 style="text-align: left;">Rijul_Sahu</h1>
+                                <h3 style="text-align: left;">Rijul_Sahu</h3>
                             </a>
                             <p style="font-style: italic; text-align: left;">July, 2019</p><br>
                             <h4>
-                                <p style="text-align: left;">Processes where a machine learning solution needs to be
-                                    implemented on large datasets for predictive or descriptive analytics.</p>
+                                <p style="text-align: left;">Developed a scalable machine learning solution for
+                                    automated topic modelling and text classification on large volumes of customer chat
+                                    data. The solution enabled efficient extraction of actionable insights for
+                                    predictive and descriptive analytics with minimal human intervention.</p>
                             </h4><br>
                             <img src="../assets/img/topic_modelling.png" alt="" width="50%" height="50%"><br>
                             <br>
                             <h1 style="text-align: left;">Description</h1>
                             <h4>
-                                <p style="text-align: left;">The client wanted to perform topic
-                                    modelling and text classification on data generated from customer chats.</p>
-                            </h4>
-                            <h4>
-                                <p style="text-align: left;">Customer’s chat data is auto-classified
-                                    into specific topics. Once the topics are identified by an algorithm, it should
-                                    automatically assign topics to each individual chat from a new dataset.</p>
-                            </h4>
-                            <h4>
-                                <p style="text-align: left;">Topic modelling and text classification on huge amounts
-                                    of customer chats data requires complex algorithms with high execution speed.</p>
+                                <p style="text-align: left;">The client required a system capable of automatically
+                                    categorizing incoming customer chats into predefined topics. Using machine learning
+                                    algorithms, the system first identified key themes within historical data and then
+                                    classified new chat messages into appropriate topics for faster issue resolution and
+                                    better customer understanding.</p>
                             </h4>
                             <br>
-                            <h1 style="text-align: left;">Challenges</h1>
-                            <h4>
-                                <p style="text-align: left;">The key challenges faced in this process were:</p>
-                            </h4>
-                            <ol>
-                                <h4>
-                                    <li style="text-align: left;">Difficulty in extracting actionable
-                                        insights from large volume of unstructured text data.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Difficulty in executing the
-                                        classification algorithm on large datasets using traditional systems and
-                                        methods.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Increase in data processing time
-                                        because of slow RAM and less server space.</li>
-                                </h4>
-                            </ol>
+                            <h1 style="text-align: left;">Key Challenges</h1>
+                            <ul style="text-align: left;">
+                                <li>
+                                    <h4>Extracting meaningful insights from large amounts of unstructured text data</h4>
+                                </li>
+                                <li>
+                                    <h4>Executing complex classification algorithms at scale using traditional systems
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>Performance limitations due to slow RAM and restricted server storage</h4>
+                                </li>
+                            </ul>
                             <br>
                             <h1 style="text-align: left;">Solution</h1>
+                            <h3>
+                                <p style="text-align: left;">To enable high-speed processing and scalability, I designed
+                                    and implemented a <strong>PySpark-based</strong> solution on a big data platform.
+                                </p>
+                            </h3>
+                            <br>
+                            <h3 style="text-align: left;">The automated pipeline performs the following steps:</h3>
+                            <ul style="text-align: left;">
+                                <li>
+                                    <h4>Reads and cleans raw chat data through text preprocessing routines</h4>
+                                </li>
+                                <li>
+                                    <h4>Applies topic modelling algorithms to identify patterns and key discussion areas
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>Uses a classification model to automatically bucket unseen chats into relevant
+                                        topics</h4>
+                                </li>
+                            </ul>
                             <h4>
-                                <p style="text-align: left;">With the aim of building a scalable and an optimized
-                                    solution with less human intervention, I designed and developed topic modelling and
-                                    classification script on big data supported platform using PySpark framework.</p>
-                            </h4>
-                            <h4>
-                                <p style="text-align: left;">Which executes topic modelling and classification algorithm
-                                    along with
-                                    text pre-processing within seconds, as the platform supports distributed processing
-                                    system.</p>
-                            </h4>
-                            <h4>
-                                <p style="text-align: left;">Script processes the chat data from the raw data file,
-                                    cleans chats, and
-                                    formats the data. After cleansing the text, it applies the topic modelling algorithm
-                                    and
-                                    identifies the topics as per the text data;</p>
-                            </h4>
-                            <h4>
-                                <p style="text-align: left;">also, the script runs a classification
-                                    algorithm on the unseen chats to predict / bucket the chats on specific
-                                    topics / buckets which customer is talking about.</p>
-                            </h4>
-                            <h4>
-                                <p style="text-align: left;">The team’s collaborative efforts in designing and
-                                    implementation lead to achieve an accuracy of more than 85%.</p>
+                                <p style="text-align: left;">By leveraging PySpark’s distributed processing
+                                    capabilities, the entire pipeline executes within seconds even on large datasets.
+                                    The final implementation achieved <strong>over 85% classification accuracy</strong>.
+                                </p>
                             </h4>
                             <br>
-                            <h1 style="text-align: left;">Benefits</h1>
-                            <h4>
-                                <p style="text-align: left;">The key benefits of implementing this solution are:</p>
-                            </h4>
-                            <ol>
-                                <h4>
-                                    <li style="text-align: left;">Reduced data processing time to ~3 minutes.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Mined for topics and identified focus areas,
-                                        resolutions, sentiment, etc. in lesser processing time.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Removed manual intervention up to
-                                        98% – error-free delivery.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Reduced load on server –
-                                        now running on distributed mode.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Optimized process
-                                        and reduced cost.</li>
-                                </h4>
-                            </ol>
+                            <h1 style="text-align: left;">Key Benefits</h1>
+                            <ul style="text-align: left;">
+                                <li>
+                                    <h4>Reduced total processing time to approximately <strong>3 minutes</strong></h4>
+                                </li>
+                                <li>
+                                    <h4>Delivered accurate and automated topic categorization with <strong>98% less
+                                            manual intervention</strong></h4>
+                                </li>
+                                <li>
+                                    <h4>Enabled detailed insights on topics, sentiment, and resolution focus areas</h4>
+                                </li>
+                                <li>
+                                    <h4>Optimized computing efficiency by running in distributed mode</h4>
+                                </li>
+                                <li>
+                                    <h4>Minimized overall operational cost through full automation</h4>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
