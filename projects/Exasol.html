@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Exasol – A CRM Analytics Solution</title>
-    <meta content="" name="descriptison">
+    <title>Exasol - CRM Analytics Automation Solution</title>
+    <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="../assets/img/favicon.png" rel="icon">
-    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="../assets/img/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
 
     <!-- Google Fonts -->
     <link
@@ -32,6 +33,7 @@
         body {
             font-family: sans-serif;
         }
+
         h4 {
             font-family: sans-serif;
         }
@@ -61,14 +63,19 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Exasol – A CRM Analytics Solution</h2>
+                    <h2>Exasol - CRM Analytics Automation Solution</h2>
                     <br>
                     <div class="row" style="text-align: center;">
                         <div class="col-lg-10" style="margin: auto;">
                             <a href="../index.html">
-                                <h3 style="text-align: left;">Rijul_Sahu</h1>
+                                <h3 style="text-align: left;">Rijul_Sahu</h3>
                             </a>
                             <p style="font-style: italic; text-align: left;">October, 2019</p><br>
+                            <h4>
+                                <p style="text-align: left;">Developed an automated analytics solution using Exasol's
+                                    high-performance, in-memory MPP database to deliver CRM insights and calculate
+                                    consumer retention rates across brands, regions, and time periods.</p>
+                            </h4>
                             <h4>
                                 <p style="text-align: left;">Exasol is a high-performance, in-memory
                                     massively parallel processing (MPP) database specifically designed
@@ -78,83 +85,77 @@
                             <br>
                             <h4>
                                 <p style="text-align: left;">You can find more about
-                                    exasol here, <a href="https://www.exasol.com" target="_blank">https://www.exasol.com</p></a>
+                                    exasol here, <a href="https://www.exasol.com"
+                                        target="_blank">https://www.exasol.com</a></p>
                             </h4><br>
                             <h1 style="text-align: left;">Description</h1>
                             <h4>
-                                <p style="text-align: left;">My clients’ Digital Brand Commerce,
-                                    Analytics & Operations team wanted some metrics that could provide
-                                    insights on CRM, and calculate the retention rate of consumers across
-                                    multiple consumer channels for different time periods (month, quarter,
-                                    half-year, year, etc.), regions, countries, and brands.</p>
-                            </h4>
-                            <h4>
-                                <p style="text-align: left;">This process included activities like filtering
-                                    data as per business rules, aggregating data, split that data into
-                                    different consumer segments, and lastly, calculate retention rate
-                                    for the required selection.</p>
+                                <p style="text-align: left;">The Digital Brand Commerce, Analytics & Operations team
+                                    required accurate and repeatable CRM metrics to measure consumer retention across
+                                    multiple channels and time granularities (month, quarter, half‑year, year). The
+                                    legacy process relied on a mix of SQL scripts and Excel‑based aggregations, causing
+                                    inefficiency and inconsistent reporting. The new solution streamlined this analysis
+                                    within Exasol through complete automation.</p>
                             </h4>
                             <br>
-                            <h1 style="text-align: left;">Challenges</h1>
-                            <h4>
-                                <p style="text-align: left;">The key challenges faced in this process were:</p>
-                            </h4>
-                            <ol>
-                                <h4>
-                                    <li style="text-align: left;">Multiple database scripts and
-                                        Excel activities for deriving one set of results.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Excessive manual intervention to change
-                                        time and region filters.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Heavy files using too much space on the
-                                        server.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Complex calculations making it a tedious
-                                        process.</li>
-                                </h4>
-                            </ol>
+                            <h1 style="text-align: left;">Key Challenges</h1>
+                            <ul style="text-align: left;">
+                                <li>
+                                    <h4>Multiple disparate SQL scripts and spreadsheets needed for a single report.</h4>
+                                </li>
+                                <li>
+                                    <h4>High manual effort to change filters (time period, region, brand).</h4>
+                                </li>
+                                <li>
+                                    <h4>Heavy data files consuming large server space.</h4>
+                                </li>
+                                <li>
+                                    <h4>Complex calculations increasing process time and error risk.</h4>
+                                </li>
+                            </ul>
                             <br>
                             <h1 style="text-align: left;">Solution</h1>
                             <h4>
-                                <p style="text-align: left;">To reduce the overall time spent by the
-                                    clients Operations team on manual and time-consuming activities,</p>
+                                <p style="text-align: left;">To eliminate manual tasks and optimize performance, I
+                                    designed and deployed automated <strong>Lua scripts</strong> within Exasol. The
+                                    scripts:</p>
                             </h4>
+                            <ul style="text-align: left;">
+                                <li>
+                                    <h4>Process consumer data from multiple channels and sources.</h4>
+                                </li>
+                                <li>
+                                    <h4>Apply data quality rules and perform aggregation by business logic.</h4>
+                                </li>
+                                <li>
+                                    <h4>Segment consumers into groups based on defined parameters.</h4>
+                                </li>
+                                <li>
+                                    <h4>Calculate key CRM metrics, including retention rates, in real time.</h4>
+                                </li>
+                            </ul>
                             <h4>
-                                <p style="text-align: left;">I designed, built, and deployed automated Lua
-                                    scripts (lightweight embeddable scripting language) in Exasol, which
-                                    generates reports in a few clicks on entering few, required parameters.
-                                </p>
+                                <p style="text-align: left;">Reports are now generated in a few clicks by simply
+                                    entering the desired filters-significantly improving ease of use and execution
+                                    speed.</p>
                             </h4>
-                            <h4>
-                                <p style="text-align: left;">The script processes data from different
-                                    consumer segments, applies business rules for cleaning and aggregating,
-                                    splits it into different consumer segments, finds useful metrics, and
-                                    then provides the retention rates.</p>
-                                <br>
-                                <h1 style="text-align: left;">Benefits</h1>
-                                <h4>
-                                    <p style="text-align: left;">The key benefits of implementing this solution are:
-                                    </p>
-                                </h4>
-                                <ol>
-                                    <h4>
-                                        <li style="text-align: left;">Reduced TAT(turn around time) from
-                                            45 minutes to 4 minutes.</li>
-                                    </h4>
-                                    <h4>
-                                        <li style="text-align: left;">Reduced manual intervention up to 98%.</li>
-                                    </h4>
-                                    <h4>
-                                        <li style="text-align: left;">Optimized process.</li>
-                                    </h4>
-                                    <h4>
-                                        <li style="text-align: left;">Reduced ongoing operations cost.</li>
-                                    </h4>
-                                </ol>
+                            <br>
+                            <h1 style="text-align: left;">Key Benefits</h1>
+
+                            <ul style="text-align: left;">
+                                <li>
+                                    <h4>Reduced turnaround time from <strong>45 minutes to 4 minutes</strong></h4>
+                                </li>
+                                <li>
+                                    <h4>Decreased manual intervention by <strong>up to 98%</strong></h4>
+                                </li>
+                                <li>
+                                    <h4>Optimized process and resource utilization</h4>
+                                </li>
+                                <li>
+                                    <h4>Lowered ongoing operations cost through full automation</h4>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
