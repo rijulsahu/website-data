@@ -6,12 +6,13 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Data Integration using Python & Alteryx</title>
-    <meta content="" name="descriptison">
+    <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="../assets/img/favicon.png" rel="icon">
-    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="../assets/img/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
 
     <!-- Google Fonts -->
     <link
@@ -32,6 +33,7 @@
         body {
             font-family: sans-serif;
         }
+
         h4 {
             font-family: sans-serif;
         }
@@ -66,108 +68,88 @@
                     <div class="row" style="text-align: center;">
                         <div class="col-lg-10" style="margin: auto;">
                             <a href="../index.html">
-                                <h3 style="text-align: left;">Rijul_Sahu</h1>
+                                <h3 style="text-align: left;">Rijul_Sahu</h3>
                             </a>
                             <p style="font-style: italic; text-align: left;">January, 2020</p><br>
                             <h4>
-                                <p style="text-align: left;">Digital process wherein enterprise reporting
-                                    solution needs to be implemented on large datasets for descriptive analytics.</p>
+                                <p style="text-align: left;">Developed a digital reporting solution to enable
+                                    enterprise-level descriptive analytics on large datasets. The solution empowered
+                                    multiple business units across Adidas and Reebok with automated, timely, and
+                                    data-driven decision-making capabilities.</p>
                             </h4><br>
                             <img src="../assets/img/alteryx.png" alt="" width="50%" height="50%"><br>
                             <br>
                             <h1 style="text-align: left;">Description</h1>
                             <h4>
-                                <p style="text-align: left;">The client wanted an automated reporting solution,
-                                    which has capability to serve multiple business units enabling effective and
-                                    time-bound decision making and covers scope of Adidas and Reebok global business
-                                    accounts.</p>
-                            </h4>
-                            <h4>
-                                <p style="text-align: left;">The goal of the project was to replace
-                                    the existing Syntasa application clickstream data source with Adobe API using
-                                    in-house toolsets.</p>
+                                <p style="text-align: left;">The objective was to replace an existing Syntasa
+                                    clickstream data integration system with a new Adobe API-based pipeline using
+                                    in-house enterprise toolsets. The solution needed to enhance scalability, reduce
+                                    costs, and establish full ownership of data processing and reporting logic.</p>
                             </h4>
                             <br>
-                            <h1 style="text-align: left;">Challenges</h1>
-                            <h4>
-                                <p style="text-align: left;">The key challenges faced in this process were:</p>
-                            </h4>
-                            <ol>
-                                <h4>
-                                    <li style="text-align: left;">High processing costs.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">High license costs.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Security concerns.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Lack of transparency on functionality.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Dependency on vendor.</li>
-                                </h4>
-                            </ol>
+                            <h1 style="text-align: left;">Key Challenges</h1>
+                            <ul style="text-align: left;">
+                                <li>
+                                    <h4>High processing and licensing costs of the legacy platform.</h4>
+                                </li>
+                                <li>
+                                    <h4>Security and data governance concerns.</h4>
+                                </li>
+                                <li>
+                                    <h4>Limited transparency in existing functionality.</h4>
+                                </li>
+                                <li>
+                                    <h4>Operational dependency on the external vendor.</h4>
+                                </li>
+                            </ul>
                             <br>
                             <h1 style="text-align: left;">Solution</h1>
                             <h4>
-                                <p style="text-align: left;">I designed and developed a solution using Python and
-                                    Alteryx,
-                                    which consists of 3 steps:</p>
+                                <p style="text-align: left;">Designed and implemented an end-to-end automated data
+                                    pipeline combining Python and Alteryx:</p>
                             </h4>
-                            <ol>
-                                <h4>
-                                    <li style="text-align: left;">Data pull using Adobe API
-                                        and the code is written in Python.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Data transformation and application of
-                                        business rules written in Alteryx workflows.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Push analytics-ready data set into Exasol
-                                        in-memory database for enterprise wide reporting and analysis.</li>
-                                </h4>
-                            </ol>
+                            <ul style="text-align: left;">
+                                <li>
+                                    <h4><strong>Data Extraction:</strong> Leveraged Python scripts to fetch data from
+                                        Adobe APIs.</h4>
+                                </li>
+                                <li>
+                                    <h4><strong>Data Transformation:</strong> Applied business rules and complex
+                                        transformations using
+                                        Alteryx workflows.</h4>
+                                </li>
+                                <li>
+                                    <h4><strong>Data Loading:</strong> Pushed analytics-ready datasets into the
+                                        Exasol in-memory database for enterprise-wide reporting.</h4>
+                                </li>
+                            </ul>
                             <h4>
-                                <p style="text-align: left;">All these steps happen in a tightly co-ordinated and
-                                    scheduled Alteryx wrapper workflow.</p>
-                            </h4>
-                            <h4>
-                                <p style="text-align: left;">I also integrated an ingeniously developed
-                                    ‘Slack bot’ into the production system, which sends daily job notifications
-                                    to Adidas’ Global Dev Ops team.</p>
+                                <p style="text-align: left;">These components were orchestrated within a master Alteryx
+                                    wrapper workflow to ensure scheduled, reliable execution. Additionally, a custom
+                                    Slack bot was integrated to notify Adidas' Global DevOps team about daily job status
+                                    and performance metrics.</p>
                             </h4>
                             <br>
-                            <h1 style="text-align: left;">Benefits</h1>
-                            <h4>
-                                <p style="text-align: left;">Efforts in designing and implementing this solution led to:
-                                </p>
-                            </h4>
-                            <ol>
-                                <h4>
-                                    <li style="text-align: left;">In-house knowledge development
-                                        – no dependency on vendor.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Eliminated ongoing delivery
-                                        costs on Syntasa application.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Merged multiple business unit’s
-                                        data like football Adidas, Yeezy Adidas, et cetera into a single data repository
-                                        for multiple stakeholders enabling multi-level analysis.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Removed manual intervention –
-                                        error-free delivery.</li>
-                                </h4>
-                                <h4>
-                                    <li style="text-align: left;">Automated data quality by adding
-                                        validation checks in Alteryx workflow.</li>
-                                </h4>
-                            </ol>
+                            <h1 style="text-align: left;">Key Benefits</h1>
+                            <ul style="text-align: left;">
+                                <li>
+                                    <h4>Established self-sufficient, in-house integration-eliminating vendor dependency.
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>Reduced recurring costs associated with the Syntasa platform.</h4>
+                                </li>
+                                <li>
+                                    <h4>Unified multiple Adidas business streams (e.g., Football, Yeezy, etc.) into a
+                                        single consolidated data repository.</h4>
+                                </li>
+                                <li>
+                                    <h4>Achieved zero manual intervention through full process automation.</h4>
+                                </li>
+                                <li>
+                                    <h4>Embedded data quality validation checks for error-free delivery.</h4>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

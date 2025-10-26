@@ -1,0 +1,34 @@
+{
+  "name": "Rijul Sahu - Cloud Solutions Architect",
+  "short_name": "Rijul Sahu",
+  "description": "AWS certified Cloud Solutions Architect & Big Data Expert specializing in Hadoop, Python, Alteryx, and enterprise analytics solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#040b14",
+  "theme_color": "#18d26e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/img/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/aws.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "technology"],
+  "lang": "en",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "assets/img/hero-bg.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ]
+}
