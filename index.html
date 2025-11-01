@@ -40,14 +40,51 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- PWA Manifest -->
-  <link rel="manifest" href="manifest.json">
-
-  <!-- Additional PWA meta tags -->
-  <meta name="theme-color" content="#18d26e">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Custom Styles for Certification Badges -->
+  <style>
+    .certifications {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin: 0 auto 20px auto;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+    }
+    
+    /* Ensure parent container doesn't interfere with centering */
+    #hero .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .aws-badge img, .databricks-badge img {
+      max-width: 120px;
+      height: auto;
+      transition: transform 0.3s ease;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .aws-badge img:hover, .databricks-badge img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    @media (max-width: 768px) {
+      .certifications {
+        gap: 15px;
+      }
+      
+      .aws-badge img, .databricks-badge img {
+        max-width: 100px;
+      }
+    }
+  </style>
 
 </head>
 
@@ -72,14 +109,21 @@
   <!-- ======= Hero Section ======= -->
   <section class="container d-flex flex-column justify-content-center" id="hero">
     <div class="container d-flex flex-column justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-      <div class="aws">
-        <a href="https://www.youracclaim.com/badges/8a29b89e-c32b-44f7-94be-800f7412c16d/linked_in" target="_blank">
-          <img src="assets/img/aws.png" alt="">
-        </a>
+      <div class="certifications">
+        <div class="databricks-badge">
+          <a href="https://credentials.databricks.com/159633769" target="_blank">
+            <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/159633769" alt="Databricks Certified Data Engineer Associate" title="Databricks Certified Data Engineer Associate">
+          </a>
+        </div>
+        <div class="aws-badge">
+          <a href="https://www.youracclaim.com/badges/8a29b89e-c32b-44f7-94be-800f7412c16d/linked_in" target="_blank">
+            <img src="assets/img/aws.png" alt="AWS Certified Solutions Architect" title="AWS Certified Solutions Architect">
+          </a>
+        </div>
       </div>
       <h1>Rijul Sahu</h1>
-      <p>I'm <span>Cloud Solutions Architect</span></p>
-      <p>and <span>Big Data Architect</span></p>
+      <p>I'm <span>Lead Data Engineer in Kellanova</span></p>
+      <p>and aspiring <span>Cloud Solutions Architect</span></p>
       <div id="upper">
         <div class="social-links">
           <a href="https://www.linkedin.com/in/rijul-sahu-242b59129/" target="_blank" class="linkedin"><i
@@ -105,21 +149,18 @@
           <div class="row" style="text-align: center;">
             <div class="col-lg-10" style="margin: auto;">
               <h3>
-                <p style="text-align: left;">Hello. I'm Rijul. I help enterprises & organizations for digital
-                  transformation.</p>
+                <p style="text-align: left;">Hello, I'm Rijul. I help enterprises and organizations drive digital transformation.</p>
               </h3><br>
               <h5>
-                <p style="text-align: left;">My technical interests span the entire stack of data analytics &
-                  automation:
-                  distributed big data systems - hadoop & spark, data warehouse, ETL, python, Alteryx &
-                  <a href="https://www.youracclaim.com/badges/8a29b89e-c32b-44f7-94be-800f7412c16d/linked_in"
-                    target="_blank">
-                    AWS cloud platform</a>.
+                <p style="text-align: left;">Lead Data Engineer with over 14 years of experience driving complex data transformations, building scalable analytics platforms, and leading high-performing engineering teams. Proven ability to architect and implement cloud-based data ecosystems, automate CI/CD deployments, and translate business needs into robust technical solutions. Currently seeking to leverage my comprehensive data expertise and cross-team collaboration skills to transition into a Solutions Architect role.
                 </p>
               </h5> <br>
               <h5>
-                <p style="text-align: left;">If I am not working on technology then I am learning & upskilling
-                  myself in new technical & business skills.</p>
+                <p style="text-align: left;">My technical expertise spans the full stack of data analytics and automation, including distributed big data systems such as Hadoop, Spark, and Databricks; data warehousing with Snowflake; ETL processes; Python programming; dbt (data build tool); GitHub CI/CD workflows; and the AWS cloud platform.
+                </p>
+              </h5> <br>
+              <h5>
+                <p style="text-align: left;">When I'm not working on technology, I am focused on learning and upskilling myself in new technical and business skills.</p>
               </h5><br>
               <h4>
                 <p style="text-align: left;">I am on <a href="https://www.linkedin.com/in/rijul-sahu-242b59129/"
@@ -164,7 +205,7 @@
                     style="float:left;width:100%;height:100%;object-fit:cover;">
                 </a>
               </div>
-              <h4><a href="projects/Hadoop.html">Bigdata Analytics solution using Hadoop</a></h4>
+              <h4><a href="projects/Hadoop.html">Big Data Analytics solution using Hadoop</a></h4>
             </div>
           </div>
 
