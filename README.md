@@ -1,19 +1,22 @@
-# 🚀 Rijul Sahu - Cloud Solutions Architect Portfolio
+# 🚀 Rijul Sahu - Lead Data Engineer & Aspiring Cloud Solutions Architect
 
 [![AWS Certified](https://img.shields.io/badge/AWS-Certified%20Solutions%20Architect-orange?style=for-the-badge&logo=amazon-aws)](https://www.youracclaim.com/badges/8a29b89e-c32b-44f7-94be-800f7412c16d/linked_in)
+[![Databricks Certified](https://img.shields.io/badge/Databricks-Certified%20Data%20Engineer%20Associate-red?style=for-the-badge&logo=databricks)](https://credentials.databricks.com/159633769)
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://rijul.cloud)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-> **Professional portfolio showcasing expertise in Cloud Architecture, Big Data Analytics, and DevOps Engineering**
+> **Lead Data Engineer at Kellanova with 14+ years of experience, transitioning to Cloud Solutions Architect role**
 
 ## 🌟 Overview
 
-This repository contains the source code for my professional portfolio website, highlighting my experience as a **Cloud Solutions Architect** and **Big Data Expert**. The site showcases real-world projects involving AWS cloud infrastructure, Hadoop ecosystems, machine learning solutions, and enterprise-scale data analytics.
+This repository contains the source code for my professional portfolio website, highlighting my experience as a **Lead Data Engineer** and **aspiring Cloud Solutions Architect**. The site showcases real-world projects involving modern data platforms like Databricks, Snowflake, AWS cloud infrastructure, and enterprise-scale analytics solutions.
 
 ### 🎯 Key Highlights
-- **5 Major Projects** with detailed case studies and measurable business impact
-- **AWS Certified Solutions Architect** with hands-on cloud expertise
+- **Lead Data Engineer at Kellanova** with 14+ years of experience
+- **Dual Certifications**: AWS Solutions Architect + Databricks Data Engineer Associate
+- **Modern Data Stack**: Databricks, Snowflake, dbt, GitHub CI/CD workflows
 - **Big Data Engineering** experience processing 6+ billion records
+- **5 Major Projects** with detailed case studies and measurable business impact
 - **DevOps & Infrastructure as Code** using Terraform and CI/CD pipelines
 - **Machine Learning & Analytics** solutions with 85%+ accuracy rates
 
@@ -31,13 +34,15 @@ This repository contains the source code for my professional portfolio website, 
 - **SEO Optimized** - Meta tags, sitemap, and structured data
 
 ### Tools & Technologies Featured
-- **Cloud Platforms**: AWS (VPC, EC2, RDS, S3)
+- **Cloud Platforms**: AWS (VPC, EC2, RDS, S3), Databricks
+- **Modern Data Stack**: Databricks, Snowflake, dbt (data build tool)
 - **Big Data**: Hadoop, Apache Spark, Apache Pig, Hive
-- **Databases**: Exasol (In-Memory MPP), Traditional RDBMS
+- **Databases**: Snowflake, Exasol (In-Memory MPP), Traditional RDBMS
 - **Programming**: Python, SQL, Lua Scripts
-- **Data Integration**: Alteryx, Adobe APIs
-- **DevOps**: Terraform, CI/CD Pipelines
+- **Data Integration**: Alteryx, Adobe APIs, ETL Pipelines
+- **DevOps**: Terraform, GitHub CI/CD Workflows, Infrastructure as Code
 - **Machine Learning**: PySpark, Topic Modeling, Text Classification
+- **Current Role**: Lead Data Engineer at Kellanova (Fortune 500)
 
 ## 📁 Project Structure
 
@@ -262,13 +267,26 @@ While this is a personal portfolio, suggestions and improvements are welcome!
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 💼 Current Role & Certifications
+
+**Lead Data Engineer at Kellanova** (Fortune 500 Company)
+- Leading data transformation initiatives and analytics platform development
+- Architecting cloud-based data ecosystems using modern data stack
+- Managing cross-functional teams and driving digital transformation projects
+
+**Professional Certifications:**
+- 🏆 **Databricks Certified Data Engineer Associate** (Expires September 1, 2027)
+- 🏆 **AWS Certified Solutions Architect** (Expired, Preparing for Exam)
+
 ## 📞 Contact
 
 **Rijul Sahu**  
+🏢 **Current Role**: Lead Data Engineer at Kellanova  
 🌐 **Website**: [rijul.cloud](https://rijul.cloud)  
 💼 **LinkedIn**: [rijul-sahu](https://www.linkedin.com/in/rijul-sahu-242b59129/)  
-📧 **Email**: [rijulsahu@duck.com](mailto:rijulsahu@duck.com)  
-🔗 **Stack Overflow**: [rijul-sahu](https://stackoverflow.com/users/2831370/rijul-sahu)
+📧 **Email**: [rijulsahu@duck.com](mailto:rijulsahu@duck.com) *(Business inquiries only)*  
+🔗 **Stack Overflow**: [rijul-sahu](https://stackoverflow.com/users/2831370/rijul-sahu)  
+🎯 **Career Goal**: Transitioning to Cloud Solutions Architect role
 
 ---
 
