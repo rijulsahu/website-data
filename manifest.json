@@ -9,7 +9,7 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "assets/img/favicon.png",
+      "src": "assets/img/favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/png"
     },
@@ -25,10 +25,10 @@
   "scope": "/",
   "screenshots": [
     {
-      "src": "assets/img/hero-bg.jpg",
-      "sizes": "1280x720",
-      "type": "image/jpeg",
-      "form_factor": "wide"
+      "src": "assets/img/aws.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow"
     }
   ]
 }
