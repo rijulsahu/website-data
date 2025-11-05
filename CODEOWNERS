@@ -1,0 +1,36 @@
+# CODEOWNERS file for Rijul Sahu Portfolio
+# This file defines individuals or teams responsible for code in this repository.
+# More info: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything in the repo
+# This will be requested for review when someone opens a pull request
+*       @rijulsahu
+
+# HTML files - Portfolio pages
+*.html  @rijulsahu
+
+# CSS and styling
+*.css   @rijulsahu
+assets/css/  @rijulsahu
+
+# JavaScript files
+*.js    @rijulsahu
+assets/js/  @rijulsahu
+
+# Configuration files
+*.json  @rijulsahu
+*.xml   @rijulsahu
+*.txt   @rijulsahu
+
+# Documentation
+*.md    @rijulsahu
+README.md  @rijulsahu
+
+# Project pages
+/projects/  @rijulsahu
+
+# Assets and images
+/assets/img/  @rijulsahu
+
+# Resume/CV
+assets/Rijul_Sahu.pdf  @rijulsahu
