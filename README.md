@@ -49,7 +49,7 @@ This repository contains the source code for my professional portfolio website, 
 ```
 rijul-portfolio/
 ├── 📄 index.html              # Main landing page
-├── 📄 email.html              # Contact information
+├── ☎️ contact                 #contact section
 ├── 📄 404.html                # Custom error page
 ├── 📄 manifest.json           # PWA configuration
 ├── 📄 sitemap.xml             # SEO sitemap

@@ -41,132 +41,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   
-  <!-- Custom Styles for Certification Badges -->
-  <style>
-    .certifications {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      margin: 0 auto 20px auto;
-      flex-wrap: wrap;
-      width: 100%;
-      max-width: 300px;
-      text-align: center;
-    }
-    
-    /* Ensure parent container doesn't interfere with centering */
-    #hero .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .aws-badge img, .databricks-badge img {
-      max-width: 120px;
-      height: auto;
-      transition: transform 0.3s ease;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    
-    .aws-badge img:hover, .databricks-badge img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    }
-    
-    @media (max-width: 768px) {
-      .certifications {
-        gap: 15px;
-      }
-      
-      .aws-badge img, .databricks-badge img {
-        max-width: 100px;
-      }
-    }
-    
-    /* Resume Download Styling */
-    .resume-download {
-      text-align: center;
-      margin: 20px 0;
-    }
-    
-    .resume-link {
-      display: inline-block;
-      text-decoration: none;
-      color: #333;
-      padding: 12px 25px;
-      border: 2px solid #0563bb;
-      border-radius: 25px;
-      background: linear-gradient(45deg, #f8f9fa, #ffffff);
-      box-shadow: 0 3px 10px rgba(5, 99, 187, 0.2);
-      transition: all 0.3s ease;
-      font-size: 16px;
-      font-weight: 500;
-      white-space: nowrap;
-    }
-    
-    .resume-link:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(5, 99, 187, 0.3);
-      background: linear-gradient(45deg, #0563bb, #044a99);
-      color: white;
-      text-decoration: none;
-    }
-    
-    /* Resume metadata styling */
-    .resume-info {
-      margin-top: 10px;
-    }
-    
-    .file-metadata {
-      font-size: 13px;
-      color: #666;
-      font-style: italic;
-      margin: 0;
-      text-align: center;
-    }
-    
-    /* Venobox iframe responsive styling */
-    .vbox-content {
-      max-width: 95% !important;
-      max-height: 90vh !important;
-    }
-    
-    @media (max-width: 768px) {
-      .vbox-content {
-        width: 95% !important;
-        height: auto !important;
-        max-height: 80vh !important;
-      }
-      
-      .vbox-content iframe {
-        width: 100% !important;
-        height: auto !important;
-        min-height: 300px !important;
-      }
-    }
-    
-    /* Mobile responsive adjustments */
-    @media (max-width: 480px) {
-      .resume-link {
-        padding: 10px 20px;
-        font-size: 14px;
-        max-width: 90%;
-        word-wrap: break-word;
-      }
-      
-      .file-metadata {
-        font-size: 12px;
-      }
-      
-      .vbox-content {
-        width: 98% !important;
-        max-height: 70vh !important;
-        margin: 10px auto !important;
-      }
-    }
-  </style>
 
 </head>
 
@@ -183,12 +57,13 @@
         <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#services"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+        <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+        <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
 
   </header><!-- End Header -->
-  <!-- ======= Hero Section ======= -->
+  <!-- ======= Home Section ======= -->
   <section class="container d-flex flex-column justify-content-center" id="hero">
     <div class="container d-flex flex-column justify-content-center" data-aos="zoom-in" data-aos-delay="100">
       <div class="certifications">
@@ -212,12 +87,12 @@
               class="bx bxl-linkedin"></i></a>
           <a href="https://stackoverflow.com/users/2831370/rijul-sahu" target="_blank" class="stack"><i
               class="bx bxl-stack-overflow"></i></a>
-          <a href="email.html" data-vbtype="iframe" class="venobox" title="Email Details"><i
-              class="bx bx-mail-send"></i></a>
+          <a href="https://github.com/rijulsahu" target="_blank" class="github"><i
+              class="bx bxl-github"></i></a>
         </div>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section><!-- End Home -->
 
   <main id="main">
 
@@ -228,25 +103,74 @@
         <div class="section-title">
           <h2>About</h2>
           <br>
-          <div class="row" style="text-align: center;">
-            <div class="col-lg-10" style="margin: auto;">
-              <h3>
-                <p style="text-align: center;">Hello, I'm Rijul. I help enterprises and organizations drive digital transformation.</p>
-              </h3><br>
-              <h5>
-                <p style="text-align: center;">My technical expertise spans the full stack of data analytics and automation, including distributed big data systems such as Hadoop, Spark, and Databricks; data warehousing with Snowflake; ETL processes; Python programming; dbt (data build tool); GitHub CI/CD workflows; and the AWS cloud platform.
+          <div class="row text-center">
+            <div class="col-lg-10 mx-auto">
+              <h3 class="fw-600">
+                Building cloud-first data platforms that turn raw volume into usable insight.
+              </h3>
+              <div class="section-intro-wrapper">
+                <p class="about-lead">
+                  I'm a Lead Data Engineer (14+ yrs) progressing toward Cloud Solutions Architecture. I design and deliver
+                  scalable analytics ecosystems across AWS, Databricks, Hadoop, Snowflake, Terraform & dbt. Always with an
+                  automation-first, cost-aware mindset.
                 </p>
-              </h5> <br>
-              <h5>
-                <p style="text-align: center;">When I'm not working on technology, I am focused on learning and upskilling myself in new technical and business skills.</p>
-              </h5><br>
-              <h4>
-                <p style="text-align: center;">I am on <a href="https://www.linkedin.com/in/rijul-sahu-242b59129/"
-                    target="_blank">Linkedin</a>,
-                  and you can also find me on <a href="https://stackoverflow.com/users/2831370/rijul-sahu"
-                    target="_blank">
-                    Stack Overflow</a>.</p>
-              </h4>
+              </div>
+              <div class="about-metrics">
+                <div class="metric-pill" aria-label="Over six billion pricing records processed on Hadoop">
+                  <span class="counter-value" data-value="6" data-suffix="B+" aria-hidden="true">0B+</span>
+                  <span class="metric-label">pricing records (Hadoop)</span>
+                </div>
+                <div class="metric-pill" aria-label="Eighty three percent processing time reduction">
+                  <span class="counter-value" data-value="83" data-suffix="%" aria-hidden="true">0%</span>
+                  <span class="metric-label">processing time reduction</span>
+                </div>
+                <div class="metric-pill" aria-label="Ninety one percent faster CRM reporting in Exasol">
+                  <span class="counter-value" data-value="91" data-suffix="%" aria-hidden="true">0%</span>
+                  <span class="metric-label">faster CRM reporting</span>
+                </div>
+                <div class="metric-pill" aria-label="Ninety eight percent manual effort eliminated using Python and Alteryx">
+                  <span class="counter-value" data-value="98" data-suffix="%" aria-hidden="true">0%</span>
+                  <span class="metric-label">manual effort eliminated</span>
+                </div>
+                <div class="metric-pill" aria-label="Eighty five percent plus machine learning classification accuracy">
+                  <span class="counter-value" data-value="85" data-suffix="%+" aria-hidden="true">0%+</span>
+                  <span class="metric-label">ML classification accuracy</span>
+                </div>
+              </div>
+              <div class="about-columns">
+                <div class="about-col">
+                  <h5 class="fw-600"><i class="bx bx-target-lock" aria-hidden="true"></i> Core Focus</h5>
+                  <ul class="about-list">
+                    <li>Data & analytics platform architecture</li>
+                    <li>High-volume ingestion & transformation (Spark/dbt)</li>
+                    <li>Performance tuning & cost optimization</li>
+                    <li>Infrastructure as Code (Terraform)</li>
+                  </ul>
+                </div>
+                <div class="about-col">
+                  <h5 class="fw-600"><i class="bx bx-star" aria-hidden="true"></i> Strengths</h5>
+                  <ul class="about-list">
+                    <li>Cross-team technical leadership</li>
+                    <li>CI/CD workflow automation (GitHub)</li>
+                    <li>Data quality & governance mindset</li>
+                    <li>Clear stakeholder communication</li>
+                  </ul>
+                </div>
+                <details class="growth-panel" open>
+                  <summary><i class="bx bx-trending-up" aria-hidden="true"></i> Current Growth</summary>
+                  <ul class="about-list" role="list" aria-label="Current growth areas">
+                    <li>Cloud solution architecture patterns</li>
+                    <li>Multi-cloud resiliency & security</li>
+                    <li>Event-driven & real-time pipelines</li>
+                    <li>Scaling ML feature stores</li>
+                  </ul>
+                </details>
+              </div>
+              <p class="about-cta-text">I enjoy simplifying complexity, turning fragmented data & brittle legacy systems into lean, observable, self-service platforms.</p>
+              <p class="about-cta-text tight">Open to collaboration, architecture reviews, and forward-looking data initiatives.</p>
+              <div class="about-cta">
+                <a href="#contact" class="resume-link small">Get in Touch</a>
+              </div>
             </div>
           </div>
         </div>
@@ -259,14 +183,19 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <h5>
-                <p style="text-align: center;">Lead Data Engineer with over 14 years of experience driving complex data transformations, building scalable analytics platforms, and leading high-performing engineering teams. Proven ability to architect and implement cloud-based data ecosystems, automate CI/CD deployments, and translate business needs into robust technical solutions. Currently seeking to leverage my comprehensive data expertise and cross-team collaboration skills to transition into a Solutions Architect role.
-                </p>
-          </h5> <br>
+      <h5>
+        <p class="text-center">Lead Data Engineer with over 14 years of experience driving complex data transformations, building scalable analytics platforms, and leading high-performing engineering teams. Proven ability to architect and implement cloud-based data ecosystems, automate CI/CD deployments, and translate business needs into robust technical solutions. Currently seeking to leverage my comprehensive data expertise and cross-team collaboration skills to transition into a Solutions Architect role.
+        </p>
+      </h5> <br>
           <div class="resume-download">
-            <a href="assets/Rijul_Sahu.pdf" target="_blank" class="resume-link">
-              📋 Click to download resume
+            <a href="assets/Rijul_Sahu.pdf" download="Rijul_Sahu.pdf" class="resume-link" aria-label="Download Rijul Sahu Resume (PDF)">
+              Download Resume
             </a>
+            <div class="resume-actions">
+              <a href="assets/Rijul_Sahu.pdf" target="_blank" class="resume-preview-link">
+                🔍 Preview in browser
+              </a>
+            </div>
             <div class="resume-info">
               <p class="file-metadata">📅 Last updated: November 2025 | 📄 PDF Format</p>
             </div>
@@ -277,7 +206,7 @@
     </section><!-- End Resume Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="services" class="services">
+    <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -289,8 +218,7 @@
             <div class="icon-box iconbox-blue">
               <div class="icon">
                 <a href="projects/Hadoop.html">
-                  <img src="assets/img/bigdata_analytics.png" alt=""
-                    style="float:left;width:100%;height:100%;object-fit:cover;">
+          <img src="assets/img/bigdata_analytics.png" alt="">
                 </a>
               </div>
               <h4><a href="projects/Hadoop.html">Big Data Analytics solution using Hadoop</a></h4>
@@ -300,8 +228,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-orange ">
               <div class="icon">
-                <a href="projects/Topic_Modeling.html"><img src="assets/img/topic_modelling.png" alt=""
-                    style="float:left;width:100%;height:100%;object-fit:cover;"></a>
+        <a href="projects/Topic_Modeling.html"><img src="assets/img/topic_modelling.png" alt=""></a>
               </div>
               <h4><a href="projects/Topic_Modeling.html">Topic Modelling and Text Classification Machine Learning Solution</a></h4>
             </div>
@@ -311,7 +238,7 @@
             <div class="icon-box iconbox-orange ">
               <div class="icon">
                 <a href="projects/DI.html">
-                  <img src="assets/img/alteryx.png" alt="" style="float:left;width:100%;height:100%;object-fit:cover;">
+                  <img src="assets/img/alteryx.png" alt="">
                 </a>
               </div>
               <h4><a href="projects/DI.html">Data Integration using Python & Alteryx</a></h4>
@@ -322,7 +249,7 @@
             <div class="icon-box iconbox-orange ">
               <div class="icon">
                 <a href="projects/Exasol.html">
-                  <img src="assets/img/exasol.png" alt="" style="float:left;width:100%;height:100%;object-fit:cover;">
+                  <img src="assets/img/exasol.png" alt="">
                 </a>
               </div>
               <h4><a href="projects/Exasol.html">Exasol - CRM Analytics Automation Solution</a></h4>
@@ -332,8 +259,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-orange ">
               <div class="icon">
-                <a href="projects/Terraform.html"><img src="assets/img/Terraform.png" alt=""
-                    style="float:left;width:100%;height:100%;object-fit:cover;"></a>
+        <a href="projects/Terraform.html"><img src="assets/img/Terraform.png" alt=""></a>
               </div>
               <h4><a href="projects/Terraform.html">Terraform Template for Deploying VPC, Subnets, EC2, RDS & More</a>
               </h4>
@@ -342,6 +268,50 @@
         </div>
       </div>
     </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Me</h2>
+          <h5>
+            <p class="text-center">Feel free to reach out to me for any inquiries, collaborations, or opportunities. I look forward to connecting with you!</p>
+          </h5>
+        </div>
+
+        <div class="row mt-1 justify-content-center">
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            <form action="https://formspree.io/f/xblqjpjy" method="POST" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
     <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="container">
@@ -351,8 +321,8 @@
               class="bx bxl-linkedin"></i></a>
           <a href="https://stackoverflow.com/users/2831370/rijul-sahu" target="_blank" class="stack"><i
               class="bx bxl-stack-overflow"></i></a>
-          <a href="email.html" data-vbtype="iframe" class="venobox" title="Email Details"><i
-              class="bx bx-mail-send"></i></a>
+          <a href="https://github.com/rijulsahu" target="_blank" class="github"><i
+              class="bx bxl-github"></i></a>
         </div>
       </div>
     </footer><!-- End Footer -->
@@ -375,6 +345,46 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <!-- Animated Counters Script -->
+    <script>
+      (function(){
+        const counters = document.querySelectorAll('.counter-value');
+        if(!('IntersectionObserver' in window)) {
+          // Fallback: set final values immediately
+          counters.forEach(el => {
+            el.textContent = el.getAttribute('data-value') + (el.getAttribute('data-suffix')||'');
+          });
+          return;
+        }
+        const animateCounter = (el) => {
+          const target = parseFloat(el.getAttribute('data-value'));
+          const suffix = el.getAttribute('data-suffix') || '';
+          const duration = 1600;
+          const startTime = performance.now();
+          function tick(now){
+            const progress = Math.min((now - startTime) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+            const current = Math.floor(eased * target);
+            el.textContent = current + suffix;
+            if(progress < 1){
+              requestAnimationFrame(tick);
+            } else {
+              el.textContent = target + suffix;
+            }
+          }
+          requestAnimationFrame(tick);
+        };
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if(entry.isIntersecting){
+              animateCounter(entry.target);
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {threshold:0.35});
+        counters.forEach(c => observer.observe(c));
+      })();
+    </script>
 
 </body>
 
