@@ -60,97 +60,66 @@
 
         <!-- ======= Portfolio Details ======= -->
         <section id="article" class="article">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Data Integration using Python & Alteryx</h2>
-                    <br>
-                    <div class="row" style="text-align: center;">
-                        <div class="col-lg-10" style="margin: auto;">
-                            <a href="../index.html">
-                                <h3 style="text-align: left;">Rijul_Sahu</h3>
-                            </a>
-                            <p style="font-style: italic; text-align: left;">January, 2020</p><br>
-                            <h4>
-                                <p style="text-align: left;">Developed a digital reporting solution to enable
-                                    enterprise-level descriptive analytics on large datasets. The solution empowered
-                                    multiple business units across Adidas and Reebok with automated, timely, and
-                                    data-driven decision-making capabilities.</p>
-                            </h4><br>
-                            <img src="../assets/img/alteryx.png" alt="" width="50%" height="50%"><br>
-                            <br>
-                            <h1 style="text-align: left;">Description</h1>
-                            <h4>
-                                <p style="text-align: left;">The objective was to replace an existing Syntasa
-                                    clickstream data integration system with a new Adobe API-based pipeline using
-                                    in-house enterprise toolsets. The solution needed to enhance scalability, reduce
-                                    costs, and establish full ownership of data processing and reporting logic.</p>
-                            </h4>
-                            <br>
-                            <h1 style="text-align: left;">Key Challenges</h1>
-                            <ul style="text-align: left;">
-                                <li>
-                                    <h4>High processing and licensing costs of the legacy platform.</h4>
-                                </li>
-                                <li>
-                                    <h4>Security and data governance concerns.</h4>
-                                </li>
-                                <li>
-                                    <h4>Limited transparency in existing functionality.</h4>
-                                </li>
-                                <li>
-                                    <h4>Operational dependency on the external vendor.</h4>
-                                </li>
-                            </ul>
-                            <br>
-                            <h1 style="text-align: left;">Solution</h1>
-                            <h4>
-                                <p style="text-align: left;">Designed and implemented an end-to-end automated data
-                                    pipeline combining Python and Alteryx:</p>
-                            </h4>
-                            <ul style="text-align: left;">
-                                <li>
-                                    <h4><strong>Data Extraction:</strong> Leveraged Python scripts to fetch data from
-                                        Adobe APIs.</h4>
-                                </li>
-                                <li>
-                                    <h4><strong>Data Transformation:</strong> Applied business rules and complex
-                                        transformations using
-                                        Alteryx workflows.</h4>
-                                </li>
-                                <li>
-                                    <h4><strong>Data Loading:</strong> Pushed analytics-ready datasets into the
-                                        Exasol in-memory database for enterprise-wide reporting.</h4>
-                                </li>
-                            </ul>
-                            <h4>
-                                <p style="text-align: left;">These components were orchestrated within a master Alteryx
-                                    wrapper workflow to ensure scheduled, reliable execution. Additionally, a custom
-                                    Slack bot was integrated to notify Adidas' Global DevOps team about daily job status
-                                    and performance metrics.</p>
-                            </h4>
-                            <br>
-                            <h1 style="text-align: left;">Key Benefits</h1>
-                            <ul style="text-align: left;">
-                                <li>
-                                    <h4>Established self-sufficient, in-house integration-eliminating vendor dependency.
-                                    </h4>
-                                </li>
-                                <li>
-                                    <h4>Reduced recurring costs associated with the Syntasa platform.</h4>
-                                </li>
-                                <li>
-                                    <h4>Unified multiple Adidas business streams (e.g., Football, Yeezy, etc.) into a
-                                        single consolidated data repository.</h4>
-                                </li>
-                                <li>
-                                    <h4>Achieved zero manual intervention through full process automation.</h4>
-                                </li>
-                                <li>
-                                    <h4>Embedded data quality validation checks for error-free delivery.</h4>
-                                </li>
-                            </ul>
-                        </div>
+            <div class="container case-container" data-aos="fade-up">
+                <nav class="case-breadcrumb" aria-label="Breadcrumb"><a href="../index.html#portfolio" rel="noopener">← Back to Projects</a></nav>
+                <div class="case-study-header" data-aos="zoom-in" data-aos-delay="50" aria-labelledby="caseTitle">
+                    <h1 id="caseTitle" class="case-study-title">Data Integration using Python &amp; Alteryx</h1>
+                    <p class="case-meta">Jan 2020 • Enterprise Digital Reporting</p>
+                    <p class="case-tagline">Developed a digital reporting solution enabling descriptive analytics at scale—empowering multiple Adidas &amp; Reebok business units with automated, timely, data-driven decisions.</p>
+                </div>
+                <div class="case-metrics" data-aos="fade-up" data-aos-delay="70">
+                    <div class="metric-pill"><strong>0</strong> manual steps</div>
+                    <div class="metric-pill"><strong>Daily</strong> automated runs</div>
+                    <div class="metric-pill"><strong>Unified</strong> data streams</div>
+                    <div class="metric-pill"><strong>In‑house</strong> ownership</div>
+                </div>
+                <div class="case-body">
+                    <div class="panel accent case-section" id="description" data-aos="fade-up" data-aos-delay="100">
+                        <h2>Description</h2>
+                        <p>The objective was to replace an existing Syntasa clickstream data integration system with a new Adobe API-based pipeline using in-house enterprise toolsets. The solution needed to enhance scalability, reduce costs, and establish full ownership of data processing and reporting logic.</p>
+                    </div>
+                    <div class="panel case-section" id="challenges" data-aos="fade-up" data-aos-delay="150">
+                        <h2>Key Challenges</h2>
+                        <ul class="callout-list challenge">
+                            <li>High processing and licensing costs of the legacy platform.</li>
+                            <li>Security and data governance concerns.</li>
+                            <li>Limited transparency in existing functionality.</li>
+                            <li>Operational dependency on the external vendor.</li>
+                        </ul>
+                    </div>
+                    <div class="panel case-section" id="solution" data-aos="fade-up" data-aos-delay="200">
+                        <h2>Solution</h2>
+                        <p>Designed and implemented an end-to-end automated data pipeline combining Python and Alteryx:</p>
+                        <ul class="callout-list">
+                            <li><strong>Data Extraction:</strong> Leveraged Python scripts to fetch data from Adobe APIs.</li>
+                            <li><strong>Data Transformation:</strong> Applied business rules and complex transformations using Alteryx workflows.</li>
+                            <li><strong>Data Loading:</strong> Pushed analytics-ready datasets into the Exasol in-memory database for enterprise-wide reporting.</li>
+                        </ul>
+                        <p>These components were orchestrated within a master Alteryx wrapper workflow to ensure scheduled, reliable execution. Additionally, a custom Slack bot was integrated to notify Adidas' Global DevOps team about daily job status and performance metrics.</p>
+                    </div>
+                    <div class="panel case-section" id="benefits" data-aos="fade-up" data-aos-delay="250">
+                        <h2>Key Benefits</h2>
+                        <ul class="callout-list benefit">
+                            <li>Established self-sufficient, in-house integration—eliminating vendor dependency.</li>
+                            <li>Reduced recurring costs associated with the Syntasa platform.</li>
+                            <li>Unified multiple Adidas business streams (e.g., Football, Yeezy) into a single consolidated data repository.</li>
+                            <li>Achieved zero manual intervention through full process automation.</li>
+                            <li>Embedded data quality validation checks for error-free delivery.</li>
+                        </ul>
+                    </div>
+                    <div class="panel case-section" id="techStack" data-aos="fade-up" data-aos-delay="280">
+                        <h2>Tech Stack</h2>
+                        <ul class="callout-list">
+                            <li>Python (Adobe Analytics API extraction)</li>
+                            <li>Alteryx (wrapper & transformation workflows)</li>
+                            <li>Exasol (in-memory analytical data store)</li>
+                            <li>Slack bot (DevOps notifications)</li>
+                            <li>Automated validation & scheduling</li>
+                        </ul>
+                    </div>
+                    <div class="panel case-section" id="visual" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Workflow Visual</h3>
+                        <img src="../assets/img/alteryx.png" alt="Alteryx workflow illustration" class="metrics-image" />
                     </div>
                 </div>
             </div>
