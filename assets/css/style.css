@@ -1288,6 +1288,12 @@ section {
 .resume-info { margin-top: 10px; }
 .file-metadata { font-size: 13px; color: #666; font-style: italic; margin: 0; text-align: center; }
 
+/* Resume download spacing tweak */
+.resume-download .file-metadata {
+  margin-top: 0.75rem; /* increase gap below the link */
+  display: block;
+}
+
 /* About Section Layout */
 .fw-600 { font-weight: 600; }
 .section-intro-wrapper { margin: 25px auto; max-width: 900px; }
