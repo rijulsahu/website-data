@@ -308,13 +308,8 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="cf-turnstile mb-3"
-                   data-sitekey="0x4AAAAAADK51L1TClvviwQy"
-                   data-callback="onTurnstileSuccess"
-                   data-expired-callback="onTurnstileExpired"
-                   data-error-callback="onTurnstileExpired">
-              </div>
-              <div class="text-center"><button type="submit" id="contact-submit" disabled>Send Message</button></div>
+              <div class="cf-turnstile mb-3" data-sitekey="0x4AAAAAADK51L1TClvviwQy"></div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
 
@@ -356,16 +351,6 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
-    <!-- Cloudflare Turnstile Callbacks -->
-    <script>
-      function onTurnstileSuccess() {
-        document.getElementById('contact-submit').disabled = false;
-      }
-      function onTurnstileExpired() {
-        document.getElementById('contact-submit').disabled = true;
-      }
-    </script>
     <!-- Animated Counters Script -->
     <script>
       (function(){
