@@ -40,7 +40,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  
+
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 </head>
 
@@ -306,6 +308,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
+              <div class="cf-turnstile mb-3" data-sitekey="0x4AAAAAADK51L1TClvviwQy"></div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
