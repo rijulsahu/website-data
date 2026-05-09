@@ -359,46 +359,6 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <!-- Animated Counters Script -->
-    <script>
-      (function(){
-        const counters = document.querySelectorAll('.counter-value');
-        if(!('IntersectionObserver' in window)) {
-          // Fallback: set final values immediately
-          counters.forEach(el => {
-            el.textContent = el.getAttribute('data-value') + (el.getAttribute('data-suffix')||'');
-          });
-          return;
-        }
-        const animateCounter = (el) => {
-          const target = parseFloat(el.getAttribute('data-value'));
-          const suffix = el.getAttribute('data-suffix') || '';
-          const duration = 1600;
-          const startTime = performance.now();
-          function tick(now){
-            const progress = Math.min((now - startTime) / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
-            const current = Math.floor(eased * target);
-            el.textContent = current + suffix;
-            if(progress < 1){
-              requestAnimationFrame(tick);
-            } else {
-              el.textContent = target + suffix;
-            }
-          }
-          requestAnimationFrame(tick);
-        };
-        const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if(entry.isIntersecting){
-              animateCounter(entry.target);
-              observer.unobserve(entry.target);
-            }
-          });
-        }, {threshold:0.35});
-        counters.forEach(c => observer.observe(c));
-      })();
-    </script>
 
 </body>
 
