@@ -7,6 +7,10 @@
 !(function($) {
   "use strict";
 
+  // Footer year
+  var yearEl = document.getElementById('footer-year');
+  if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+
   // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
