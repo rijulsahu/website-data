@@ -263,10 +263,6 @@ While this is a personal portfolio, suggestions and improvements are welcome!
 4. Push to the branch (`git push origin feature/improvement`)
 5. Create a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 💼 Current Role & Certifications
 
 **Lead Data Engineer at Kellanova** (Fortune 500 Company)
