@@ -18,7 +18,7 @@ jobs:
       - name: Update last-updated date and commit
         run: |
           MONTH=$(date +'%B %Y')
-          sed -Ei 's/(<!-- LAST_UPDATED_DATE -->[[:space:]]*)[A-Za-z]+ [0-9]{4}/\1'"$MONTH"'/' index.html
+          sed -Ei 's/(<!-- LAST_UPDATED_DATE -->[[:space:]]*)[[:alpha:]]+ [0-9]{4}/\1'"$MONTH"'/' index.html
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add index.html
