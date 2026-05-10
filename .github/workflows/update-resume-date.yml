@@ -1,0 +1,24 @@
+name: Update Resume Date
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'assets/Rijul_Sahu.pdf'
+
+jobs:
+  update-date:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update last-updated date and commit
+        run: |
+          MONTH=$(date +'%B %Y')
+          sed -i "s/LAST_UPDATED_DATE/Last updated: $MONTH/" index.html
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --staged --quiet || git commit -m "chore: auto-update resume date to $MONTH"
+          git push
