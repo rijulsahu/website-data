@@ -3,16 +3,15 @@
 [![AWS Certified](https://img.shields.io/badge/AWS-Certified%20Solutions%20Architect-orange?style=for-the-badge&logo=amazon-aws)](https://www.youracclaim.com/badges/8a29b89e-c32b-44f7-94be-800f7412c16d/linked_in)
 [![Databricks Certified](https://img.shields.io/badge/Databricks-Certified%20Data%20Engineer%20Associate-red?style=for-the-badge&logo=databricks)](https://credentials.databricks.com/159633769)
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://rijul.cloud)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-> **Lead Data Engineer at Kellanova with 14+ years of experience, transitioning to Cloud Solutions Architect role**
+> **Lead Data Engineer at Mars Snacking with 14+ years of experience, transitioning to Cloud Solutions Architect role**
 
 ## 🌟 Overview
 
 This repository contains the source code for my professional portfolio website, highlighting my experience as a **Lead Data Engineer** and **aspiring Cloud Solutions Architect**. The site showcases real-world projects involving modern data platforms like Databricks, Snowflake, AWS cloud infrastructure, and enterprise-scale analytics solutions.
 
 ### 🎯 Key Highlights
-- **Lead Data Engineer at Kellanova** with 14+ years of experience
+- **Lead Data Engineer at Mars Snacking** with 14+ years of experience
 - **Dual Certifications**: AWS Solutions Architect + Databricks Data Engineer Associate
 - **Modern Data Stack**: Databricks, Snowflake, dbt, GitHub CI/CD workflows
 - **Big Data Engineering** experience processing 6+ billion records
@@ -42,7 +41,7 @@ This repository contains the source code for my professional portfolio website, 
 - **Data Integration**: Alteryx, Adobe APIs, ETL Pipelines
 - **DevOps**: Terraform, GitHub CI/CD Workflows, Infrastructure as Code
 - **Machine Learning**: PySpark, Topic Modeling, Text Classification
-- **Current Role**: Lead Data Engineer at Kellanova (Fortune 500)
+- **Current Role**: Lead Data Engineer at Mars Snacking
 
 ## 📁 Project Structure
 
@@ -263,13 +262,9 @@ While this is a personal portfolio, suggestions and improvements are welcome!
 4. Push to the branch (`git push origin feature/improvement`)
 5. Create a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 💼 Current Role & Certifications
 
-**Lead Data Engineer at Kellanova** (Fortune 500 Company)
+**Lead Data Engineer at Mars Snacking**
 - Leading data transformation initiatives and analytics platform development
 - Architecting cloud-based data ecosystems using modern data stack
 - Managing cross-functional teams and driving digital transformation projects
@@ -281,9 +276,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 **Rijul Sahu**  
-🏢 **Current Role**: Lead Data Engineer at Kellanova  
+🏢 **Current Role**: Lead Data Engineer at Mars Snacking  
 🌐 **Website**: [rijul.cloud](https://rijul.cloud)  
-💼 **LinkedIn**: [rijul-sahu](https://www.linkedin.com/in/rijul-sahu-242b59129/)  
+💼 **LinkedIn**: [rijul-sahu](https://www.linkedin.com/in/rijul-sahu-242b59129)  
 📧 **Email**: [rijulsahu@duck.com](mailto:rijulsahu@duck.com) *(Business inquiries only)*  
 🔗 **Stack Overflow**: [rijul-sahu](https://stackoverflow.com/users/2831370/rijul-sahu)  
 🎯 **Career Goal**: Transitioning to Cloud Solutions Architect role
