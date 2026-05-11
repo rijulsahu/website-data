@@ -3,7 +3,6 @@
 [![AWS Certified](https://img.shields.io/badge/AWS-Certified%20Solutions%20Architect-orange?style=for-the-badge&logo=amazon-aws)](https://www.youracclaim.com/badges/8a29b89e-c32b-44f7-94be-800f7412c16d/linked_in)
 [![Databricks Certified](https://img.shields.io/badge/Databricks-Certified%20Data%20Engineer%20Associate-red?style=for-the-badge&logo=databricks)](https://credentials.databricks.com/159633769)
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://rijul.cloud)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
 > **Lead Data Engineer at Kellanova with 14+ years of experience, transitioning to Cloud Solutions Architect role**
 
@@ -262,10 +261,6 @@ While this is a personal portfolio, suggestions and improvements are welcome!
 3. Commit your changes (`git commit -am 'Add improvement'`)
 4. Push to the branch (`git push origin feature/improvement`)
 5. Create a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 💼 Current Role & Certifications
 
