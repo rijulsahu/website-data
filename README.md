@@ -1,6 +1,6 @@
 # 🚀 Rijul Sahu - Lead Data Engineer & Aspiring Cloud Solutions Architect
 
-[![AWS Certified](https://img.shields.io/badge/AWS-Certified%20Solutions%20Architect-orange?style=for-the-badge&logo=amazon-aws)](https://www.youracclaim.com/badges/8a29b89e-c32b-44f7-94be-800f7412c16d/linked_in)
+[![AWS Certified](https://img.shields.io/badge/AWS-Certified%20Solutions%20Architect-orange?style=for-the-badge&logo=amazon-aws)](https://www.credly.com/badges/517e7ddb-d863-4751-af60-fd476dd92cb6/public_url)
 [![Databricks Certified](https://img.shields.io/badge/Databricks-Certified%20Data%20Engineer%20Associate-red?style=for-the-badge&logo=databricks)](https://credentials.databricks.com/159633769)
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://rijul.cloud)
 
@@ -47,12 +47,13 @@ This repository contains the source code for my professional portfolio website, 
 
 ```
 rijul-portfolio/
-├── 📄 index.html              # Main landing page
-├── ☎️ contact                 #contact section
+├── 📄 index.html              # Main landing page (Home, About, Resume, Projects, Contact)
 ├── 📄 404.html                # Custom error page
+├── 🌐 favicon.ico             # Site favicon
 ├── 📄 manifest.json           # PWA configuration
 ├── 📄 sitemap.xml             # SEO sitemap
 ├── 📄 robots.txt              # Search engine directives
+├── ⚙️ customHttp.yml          # Custom HTTP headers (AWS Amplify)
 ├── 📁 assets/
 │   ├── 🎨 css/                # Stylesheets
 │   ├── 🖼️ img/                # Images and icons
@@ -270,8 +271,8 @@ While this is a personal portfolio, suggestions and improvements are welcome!
 - Managing cross-functional teams and driving digital transformation projects
 
 **Professional Certifications:**
-- 🏆 **Databricks Certified Data Engineer Associate** (Expires September 1, 2027)
-- 🏆 **AWS Certified Solutions Architect** (Expired, Preparing for Exam)
+- 🏆 **Databricks Certified Data Engineer** (Expires September 01, 2027)
+- 🏆 **AWS Certified Solutions Architect** (Expires August 01, 2029)
 
 ## 📞 Contact
 
