@@ -11,16 +11,21 @@ jobs:
   update-date:
     permissions:
       contents: write
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - name: Update last-updated date and commit
+      - name: Update last-updated date
         run: |
           MONTH=$(date +'%B %Y')
           sed -Ei 's/(<!-- LAST_UPDATED_DATE -->[[:space:]]*)[[:alpha:]]+ [0-9]{4}/\1'"$MONTH"'/' index.html
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html
-          git diff --staged --quiet || git commit -m "chore: auto-update resume date to $MONTH"
-          git push
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: "chore: auto-update resume date to ${{ github.run_number }}"
+          title: "chore: auto-update resume date"
+          body: "Automated update of LAST_UPDATED_DATE in index.html."
+          branch: "chore/update-resume-date"
+          delete-branch: true
