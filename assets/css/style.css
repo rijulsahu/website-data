@@ -1512,7 +1512,7 @@ details.growth-panel summary::-webkit-details-marker { display: none; }
 .panel.accent { background: linear-gradient(135deg,#f0f8ff,#ffffff); }
 .panel h3 { margin-top: 0; }
 
-.metrics-image { display: block; margin: 0 auto 30px; max-width: 420px; width: 100%; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+.metrics-image { display: block; margin: 0 auto 30px; max-width: 100%; width: 100%; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
 
 @media (max-width: 768px) {
   .case-study-header { padding: 40px 22px 50px; }
