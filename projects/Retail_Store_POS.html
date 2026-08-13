@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Retail Execution Data Mart for SAAG Reporting</title>
+    <meta content="Consolidated dbt transformation model for the Retail Execution Data Mart, replacing fragmented brand, category, store, and item/UPC-level tables with a single Snowflake mart covering 14 KPI metrics across L4W, L13W, and YTD for Kroger and Walmart, powering Sales, Assortment, Availability, and Growth (SAAG) reporting. Built by Rijul Sahu, Lead Data Engineer." name="description">
+    <meta content="dbt, data build tool, snowflake, retail execution data mart, saag reporting, sales assortment availability growth, kroger fiscal calendar, walmart fiscal calendar, data engineering, rijul sahu" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="../assets/img/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h4 {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                <li><a href="../index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+                <li><a href="../index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+                <li><a href="../index.html#portfolio"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+                <li><a href="../index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+            </ul>
+        </nav><!-- .nav-menu -->
+
+    </header>
+    <main id="main">
+
+        <!-- ======= Portfolio Details ======= -->
+        <section id="article" class="article">
+            <div class="container case-container" data-aos="fade-up">
+                <nav class="case-breadcrumb" aria-label="Breadcrumb"><a href="../index.html#portfolio" rel="noopener">← Back to Projects</a></nav>
+                <div class="case-study-header" data-aos="zoom-in" data-aos-delay="50" aria-labelledby="caseTitleRetailStorePOS">
+                    <h1 id="caseTitleRetailStorePOS" class="case-study-title">Consolidated Retail Execution Data Mart for SAAG Reporting</h1>
+                    <p class="case-meta">April 2026 • Retail Execution Data Mart (dbt)</p>
+                    <p class="case-tagline">Replaced fragmented brand, category, store, and item-level tables with a single high-performance dbt mart delivering 14 KPI metrics across L4W, L13W, and YTD for Kroger and Walmart.</p>
+                </div>
+                <div class="case-metrics" data-aos="fade-up" data-aos-delay="70">
+                    <div class="metric-pill"><strong>14</strong> pre-computed KPI metrics</div>
+                    <div class="metric-pill"><strong>2</strong> retailer fiscal calendars (Kroger, Walmart)</div>
+                    <div class="metric-pill"><strong>3</strong> time-frames: L4W, L13W, YTD</div>
+                    <div class="metric-pill"><strong>Weekly</strong> automated dbt refresh</div>
+                </div>
+                <div class="case-body">
+                    <div class="panel accent case-section" id="overview" data-aos="fade-up" data-aos-delay="90">
+                        <h2>Overview</h2>
+                        <p>Authored and developed a consolidated dbt [Data Build Tool] transformation model for the Retail Execution Data Mart, replacing multiple brand, category, store, and item/UPC-level tables with a single, high-performance mart covering 14 pre-computed KPI metrics across L4W, L13W, and YTD time-frames for Kroger and Walmart, aligned to retailer-specific fiscal calendars. Drove design decisions that reduce redundancy and improved query performance for downstream BI and Agentic AI consumption, with automated weekly refresh via scheduled dbt job.</p>
+                    </div>
+                    <div class="panel case-section" id="description" data-aos="fade-up" data-aos-delay="130">
+                        <h2>Description</h2>
+                        <p>Field sales and merchandising teams relied on separate brand, category, store, and item/UPC-level tables to evaluate retail execution performance, forcing downstream BI reports and Agentic AI consumers to reconcile duplicated logic across multiple objects for Sales, Assortment, Availability, and Growth (SAAG) reporting.</p>
+                        <ul class="callout-list challenge">
+                            <li>Redundant tables recomputed the same rolling-window and YOY logic at multiple grains, inflating maintenance and compute cost.</li>
+                            <li>Kroger and Walmart each run distinct fiscal calendars, making like-for-like L4W/L13W/YTD and YOY comparisons error-prone.</li>
+                            <li>No single, high-performance mart existed to serve both BI dashboards and Agentic AI consumption consistently.</li>
+                        </ul>
+                    </div>
+                    <div class="panel case-section" id="keyChallenges" data-aos="fade-up" data-aos-delay="170">
+                        <h2>Key Challenges</h2>
+                        <ul class="callout-list challenge">
+                            <li>Reconciling Kroger's 4-5-4 (Saturday week-end) and Walmart's 4-4-5 (Friday week-end) fiscal calendars into one consistent period framework.</li>
+                            <li>Aligning YOY comparisons to the matching fiscal week number rather than a fixed 52-week lookback, across both retailers.</li>
+                            <li>Consolidating brand, category, store, and item/UPC-level tables into a single mart without losing item-level granularity or duplicating computation.</li>
+                            <li>Building self-healing, run-day-agnostic scheduling so each retailer independently resolves its last complete fiscal week without manual overrides.</li>
+                            <li>Absorbing source data quality issues (e.g., inconsistent date-string formatting) defensively without breaking scheduled runs.</li>
+                            <li>Maintaining query performance for a ~2B row POS fact table feeding both BI dashboards and Agentic AI.</li>
+                        </ul>
+                    </div>
+                    <div class="panel case-section" id="solution" data-aos="fade-up" data-aos-delay="210">
+                        <h2>Solution Highlights</h2>
+                        <ul class="callout-list">
+                            <li>Authored a two-layer dbt architecture: an ephemeral intermediate model owning all transformation logic (calendar alignment, period boundaries, YOY pivot, KPI calculations), inlined into a thin incremental mart that owns materialization, clustering, hooks, and access grants.</li>
+                            <li>Authored the customer fiscal calendar dbt models (day and week grain) for both Kroger (4-5-4) and Walmart (4-4-5), including period/quarter/half hierarchy and fiscal close-date logic.</li>
+                            <li>Designed a self-healing, per-retailer reference-date resolution anchored to each retailer's latest loaded POS date, snapped to its fiscal week-end day-of-week, removing the need for manual scheduling variables.</li>
+                            <li>Built CURR/PREV YOY pivoting keyed on matching fiscal week number across L4W, L13W, and YTD windows for accurate like-for-like comparisons.</li>
+                            <li>Consolidated brand, category, store, and item/UPC-level reporting into one mart at Store × Product × Time-frame grain, replacing multiple redundant tables.</li>
+                            <li>Configured incremental delete+insert materialization with retailer-scoped unique keys and clustering (retailer, timeframe, category, brand) to optimize downstream query performance.</li>
+                            <li>Automated weekly refresh via a scheduled dbt job with environment-aware Snowflake access grants for dev/QA vs. production.</li>
+                        </ul>
+                    </div>
+                    <div class="panel case-section" id="impact" data-aos="fade-up" data-aos-delay="250">
+                        <h2>Results &amp; Impact</h2>
+                        <ul class="callout-list benefit">
+                            <li>Replaced multiple brand, category, store, and item/UPC-level tables with a single consolidated Retail Execution Data Mart.</li>
+                            <li>Delivered 14 pre-computed KPI metrics (current, prior year, absolute and percent YOY change, and weekly averages) across three time-frames for two retailers in one queryable object.</li>
+                            <li>Directly powers Sales, Assortment, Availability, and Growth (SAAG) reporting for field sales and merchandising teams.</li>
+                            <li>Reduced redundancy and improved query performance for downstream BI dashboards and Agentic AI consumption.</li>
+                            <li>Enabled fully automated, self-healing weekly refreshes resilient to delayed or out-of-sync retailer feeds.</li>
+                            <li>Established a reusable, retailer-aligned fiscal calendar foundation (Kroger and Walmart) for future reporting models.</li>
+                        </ul>
+                    </div>
+                    <div class="panel case-section" id="techStack" data-aos="fade-up" data-aos-delay="270">
+                        <h2>Tech Stack</h2>
+                        <ul class="callout-list">
+                            <li>dbt (Data Build Tool) — ephemeral and incremental models</li>
+                            <li>Snowflake — incremental delete+insert, clustering, role-based access grants</li>
+                            <li>Jinja macros for per-retailer fiscal ref-date resolution and week-end configuration</li>
+                            <li>Retailer fiscal calendars — Kroger (4-5-4), Walmart (4-4-5)</li>
+                            <li>SQL window functions and CURR/PREV pivot aggregation</li>
+                            <li>Scheduled dbt jobs for automated weekly refresh</li>
+                        </ul>
+                    </div>
+                    <div class="panel case-section" id="visual" data-aos="fade-up" data-aos-delay="290">
+                        <h3>Architecture</h3>
+                        <img src="../assets/img/retail_store_pos_transformation_summary.png" alt="Retail Execution Data Mart transformation summary illustration" class="metrics-image" />
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Portfolio Details -->
+
+    </main><!-- End #main -->
+
+    <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../assets/vendor/counterup/counterup.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/venobox/venobox.min.js"></script>
+    <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../assets/vendor/typed.js/typed.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
