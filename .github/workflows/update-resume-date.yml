@@ -9,22 +9,31 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update-date:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-        with:
-          ref: main
 
       - name: Update last-updated date
         run: |
           MONTH=$(date +'%B %Y')
           sed -Ei 's/(<!-- LAST_UPDATED_DATE -->[[:space:]]*)[[:alpha:]]+ [0-9]{4}/\1'"$MONTH"'/' index.html
 
-      - name: Commit and push
-        uses: stefanzweifel/git-auto-commit-action@v7
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v8
         with:
-          commit_message: "chore: auto-update resume date"
-          file_pattern: index.html
+          commit-message: "chore: auto-update resume date"
+          title: "chore: auto-update resume date"
+          body: "Automated update of LAST_UPDATED_DATE in index.html."
+          branch: "chore/update-resume-date"
+          delete-branch: true
+
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        run: gh pr merge --auto --squash "${{ steps.cpr.outputs.pull-request-number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
