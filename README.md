@@ -15,7 +15,7 @@ This repository contains the source code for my professional portfolio website, 
 - **Dual Certifications**: AWS Solutions Architect + Databricks Data Engineer Associate
 - **Modern Data Stack**: Databricks, Snowflake, dbt, GitHub CI/CD workflows
 - **Big Data Engineering** experience processing 6+ billion records
-- **5 Major Projects** with detailed case studies and measurable business impact
+- **8 Major Projects** with detailed case studies and measurable business impact
 - **DevOps & Infrastructure as Code** using Terraform and CI/CD pipelines
 - **Machine Learning & Analytics** solutions with 85%+ accuracy rates
 
@@ -65,7 +65,10 @@ rijul-portfolio/
     ├── 🔄 DI.html             # Data Integration Solution
     ├── 💾 Exasol.html         # CRM Analytics Automation
     ├── 🤖 Topic_Modeling.html # ML Text Classification
-    └── 🏗️ Terraform.html      # Infrastructure as Code
+    ├── 🏗️ Terraform.html      # Infrastructure as Code
+    ├── 📈 Bid_Optimization.html   # Retail Media Bid Optimization Platform
+    ├── 🏬 Retail_Store_POS.html   # Retail Execution Data Mart (dbt)
+    └── 🌐 My_Static_Website.html  # AWS Amplify Static Hosting Architecture
 ```
 
 ## 🚀 Featured Projects
@@ -94,6 +97,21 @@ rijul-portfolio/
 **Challenge**: Manual AWS resource deployment for European food delivery company  
 **Solution**: Reusable Terraform templates for VPC, EC2, RDS deployment  
 **Impact**: Full CI/CD DevOps implementation, eliminated manual errors
+
+### 6. 📈 Retail Media Bid Optimization Platform
+**Challenge**: Manual, delayed keyword-level bid management across retail media retailers  
+**Solution**: Event-driven serverless AWS Lambda + Databricks ML pipeline integrating SKAI, Snowflake  
+**Impact**: Automated weekly data-to-bid cycle across API and manual retailer workflows
+
+### 7. 🏬 Consolidated Retail Execution Data Mart (dbt)
+**Challenge**: Fragmented brand/category/store/item-level tables for SAAG reporting  
+**Solution**: Single consolidated dbt mart with 14 KPI metrics across retailer fiscal calendars  
+**Impact**: Reduced redundancy, improved query performance for BI and Agentic AI consumption
+
+### 8. 🌐 Static Website Hosting Architecture on AWS Amplify
+**Challenge**: Low-maintenance, secure hosting for a custom-domain (Hostinger) static site  
+**Solution**: AWS Amplify + Route 53 DNS delegation + CloudFront + ACM-managed TLS + GitHub CI/CD  
+**Impact**: Fully automated, serverless push-to-deploy hosting with zero infrastructure to manage
 
 ## 🌐 AWS Amplify Deployment Guide
 
