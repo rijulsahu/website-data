@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Static Website Hosting Architecture on AWS Amplify</title>
+    <meta content="AWS Amplify static website hosting architecture for rijul.cloud, integrating Route 53 DNS delegation, CloudFront CDN, ACM-managed TLS, and GitHub Actions CI/CD. Built by Rijul Sahu, Lead Data Engineer." name="description">
+    <meta content="aws amplify, static website hosting, route 53, cloudfront, acm certificate, dns delegation, github actions ci/cd, hostinger domain, rijul sahu" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="../assets/img/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h4 {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                <li><a href="../index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+                <li><a href="../index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+                <li><a href="../index.html#portfolio"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+                <li><a href="../index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+            </ul>
+        </nav><!-- .nav-menu -->
+
+    </header>
+    <main id="main">
+
+        <!-- ======= Portfolio Details ======= -->
+        <section id="article" class="article">
+            <div class="container case-container" data-aos="fade-up">
+                <nav class="case-breadcrumb" aria-label="Breadcrumb"><a href="../index.html#portfolio" rel="noopener">← Back to Projects</a></nav>
+                <div class="case-study-header" data-aos="zoom-in" data-aos-delay="50" aria-labelledby="caseTitleStaticWebsite">
+                    <h1 id="caseTitleStaticWebsite" class="case-study-title">Static Website Hosting Architecture on AWS Amplify</h1>
+                    <p class="case-meta">Oct 2025 • rijul.cloud Portfolio Site</p>
+                    <p class="case-tagline">Deployed this very portfolio site using AWS Amplify Hosting, with DNS delegated from a Hostinger-registered domain to a Route 53 hosted zone, CloudFront CDN, ACM-managed TLS, and GitHub-driven CI/CD.</p>
+                </div>
+                <div class="case-metrics" data-aos="fade-up" data-aos-delay="70">
+                    <div class="metric-pill"><strong>Amplify</strong> managed hosting</div>
+                    <div class="metric-pill"><strong>Route 53</strong> DNS delegation</div>
+                    <div class="metric-pill"><strong>CloudFront</strong> global CDN</div>
+                    <div class="metric-pill"><strong>Auto</strong> build & deploy on push</div>
+                </div>
+                <div class="case-body">
+                    <div class="panel accent case-section" id="overview" data-aos="fade-up" data-aos-delay="90">
+                        <h2>Overview</h2>
+                        <p>Designed and deployed the hosting architecture for this portfolio website (rijul.cloud) using AWS Amplify. The domain is registered with Hostinger but DNS resolution is fully delegated to an Amplify-managed Route 53 hosted zone, which routes both the apex and <code>www</code> subdomain to an Amplify-provisioned CloudFront distribution. TLS is handled via an Amplify-managed ACM certificate, and deployments are automated straight from GitHub on every push to <code>main</code>.</p>
+                    </div>
+                    <div class="panel case-section" id="description" data-aos="fade-up" data-aos-delay="130">
+                        <h2>Description</h2>
+                        <p>The goal was a low-maintenance, secure, and fully automated static site deployment that needed zero servers to manage, while still supporting a custom domain purchased from a third-party registrar (Hostinger) rather than Route 53 directly.</p>
+                        <ul class="callout-list challenge">
+                            <li>Domain was registered outside AWS, requiring a clean way to bring custom-domain HTTPS hosting under Amplify without manually managing DNS records.</li>
+                            <li>Needed strict security headers (HSTS, CSP, X-Frame-Options, etc.) applied at the edge without running a custom server.</li>
+                            <li>Wanted zero-touch deployments triggered directly by GitHub pushes, with no manual build/release steps.</li>
+                        </ul>
+                    </div>
+                    <div class="panel case-section" id="visual" data-aos="fade-up" data-aos-delay="290">
+                        <h3>Architecture</h3>
+                        <img src="../assets/img/projects/website_architecture.png" alt="AWS Amplify static website hosting architecture illustration" class="metrics-image" />
+                    </div>
+                    <div class="panel case-section" id="keyChallenges" data-aos="fade-up" data-aos-delay="170">
+                        <h2>Key Challenges</h2>
+                        <ul class="callout-list challenge">
+                            <li>Reconciling a Hostinger-registered domain with AWS-native DNS, since Amplify custom domains rely on Route 53 or externally managed CNAME/ALIAS records.</li>
+                            <li>Handling the apex domain, since DNS spec disallows a CNAME at the zone apex - resolved via a Route 53 ALIAS record pointing at CloudFront.</li>
+                            <li>Ensuring the ACM certificate validation record and subdomain verification records stayed in sync across the delegated hosted zone.</li>
+                            <li>Keeping the resume PDF's "last updated" date in sync with content changes without manual edits.</li>
+                        </ul>
+                    </div>
+                    <div class="panel case-section" id="solution" data-aos="fade-up" data-aos-delay="210">
+                        <h2>Solution Highlights</h2>
+                        <ul class="callout-list">
+                            <li>Delegated the Hostinger-registered <strong>rijul.cloud</strong> domain to AWS by switching its nameservers to the four <code>awsdns-*</code> nameservers of an Amplify-provisioned Route 53 hosted zone.</li>
+                            <li>Let Amplify auto-manage the hosted zone's apex ALIAS record and <code>www</code> CNAME record, both pointing to the app's dedicated CloudFront distribution.</li>
+                            <li>Attached an Amplify-managed ACM certificate for TLS, validated via a DNS CNAME record in the same hosted zone.</li>
+                            <li>Configured <code>customHttp.yml</code> to apply HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, and Permissions-Policy headers at the CloudFront edge.</li>
+                            <li>Added Amplify custom rules for an apex >> <code>www</code> 302 redirect and a SPA-style 404-to-<code>index.html</code> fallback for the custom 404 page.</li>
+                            <li>Connected the Amplify app directly to the <strong>main</strong> branch of the GitHub repository so every push triggers an automatic build and deploy, with a separate GitHub Actions workflow auto-updating the resume's last-updated date on the <strong>qa</strong> branch.</li>
+                        </ul>
+                    </div>
+                    <div class="panel case-section" id="impact" data-aos="fade-up" data-aos-delay="250">
+                        <h2>Results &amp; Impact</h2>
+                        <ul class="callout-list benefit">
+                            <li>Achieved a fully serverless, self-healing static hosting setup with no infrastructure to patch or scale.</li>
+                            <li>Automated HTTPS certificate issuance and renewal end-to-end via ACM + Route 53, with no manual cert management.</li>
+                            <li>Enforced strong security headers and CSP policy across every response without a custom origin server.</li>
+                            <li>Enabled true push-to-deploy CI/CD, eliminating manual release steps for every content update.</li>
+                            <li>Established a clean split between registrar (Hostinger) and DNS authority (Route 53), simplifying future domain changes.</li>
+                        </ul>
+                    </div>
+                    <div class="panel case-section" id="techStack" data-aos="fade-up" data-aos-delay="270">
+                        <h2>Tech Stack</h2>
+                        <ul class="callout-list">
+                            <li>AWS Amplify Hosting (S3-backed static hosting, custom rules, custom headers)</li>
+                            <li>Amazon CloudFront (Amplify-managed CDN distribution)</li>
+                            <li>Amazon Route 53 (Amplify-managed hosted zone, DNS delegation)</li>
+                            <li>AWS Certificate Manager (Amplify-managed TLS certificate)</li>
+                            <li>Hostinger (domain registrar)</li>
+                            <li>GitHub + GitHub Actions (CI/CD, automated resume date updates)</li>
+                            <li>Formspree &amp; Cloudflare Turnstile (contact form backend and bot protection)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Portfolio Details -->
+
+    </main><!-- End #main -->
+
+    <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../assets/vendor/counterup/counterup.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/venobox/venobox.min.js"></script>
+    <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../assets/vendor/typed.js/typed.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
