@@ -9,12 +9,15 @@ customHeaders:
         value: nosniff
       - key: Referrer-Policy
         value: strict-origin-when-cross-origin
+      - key: Cross-Origin-Opener-Policy
+        value: same-origin
       - key: Permissions-Policy
         value: camera=(), microphone=(), geolocation=(), payment=()
       - key: Content-Security-Policy
-        value: "default-src 'self'; script-src 'self' https://challenges.cloudflare.com;
-          style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-          font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data:; frame-src
-          https://challenges.cloudflare.com; connect-src 'self'
-          https://formspree.io https://challenges.cloudflare.com; form-action
-          https://formspree.io; base-uri 'self'; object-src 'none';"
+        value: >-
+          default-src 'none'; script-src 'self' https://challenges.cloudflare.com;
+          style-src 'self'; font-src 'self'; img-src 'self' data:;
+          frame-src https://challenges.cloudflare.com;
+          connect-src 'self' https://formspree.io https://challenges.cloudflare.com;
+          form-action https://formspree.io; base-uri 'self'; object-src 'none';
+          frame-ancestors 'none'; manifest-src 'self';
