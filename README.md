@@ -1,4 +1,4 @@
-# 🚀 Rijul Sahu - Lead Data Engineer & Aspiring Cloud Solutions Architect
+# 🚀 Rijul Sahu - Lead Data Engineer & Cloud Solutions Architect
 
 [![AWS Certified](https://img.shields.io/badge/AWS-Certified%20Solutions%20Architect-orange?style=for-the-badge&logo=amazon-aws)](https://www.credly.com/badges/517e7ddb-d863-4751-af60-fd476dd92cb6/public_url)
 [![Databricks Certified](https://img.shields.io/badge/Databricks-Certified%20Data%20Engineer%20Associate-red?style=for-the-badge&logo=databricks)](https://credentials.databricks.com/159633769)
@@ -8,7 +8,7 @@
 
 ## 🌟 Overview
 
-This repository contains the source code for my professional portfolio website, highlighting my experience as a **Lead Data Engineer** and **aspiring Cloud Solutions Architect**. The site showcases real-world projects involving modern data platforms like Databricks, Snowflake, AWS cloud infrastructure, and enterprise-scale analytics solutions.
+This repository contains the source code for my professional portfolio website, highlighting my experience as a **Lead Data Engineer** and **Cloud Solutions Architect**. The site showcases real-world projects involving modern data platforms like Databricks, Snowflake, AWS cloud infrastructure, and enterprise-scale analytics solutions.
 
 ### 🎯 Key Highlights
 - **Lead Data Engineer at Mars Snacking** with 14+ years of experience
