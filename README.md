@@ -2,295 +2,139 @@
 
 [![AWS Certified](https://img.shields.io/badge/AWS-Certified%20Solutions%20Architect-orange?style=for-the-badge&logo=amazon-aws)](https://www.credly.com/badges/517e7ddb-d863-4751-af60-fd476dd92cb6/public_url)
 [![Databricks Certified](https://img.shields.io/badge/Databricks-Certified%20Data%20Engineer%20Associate-red?style=for-the-badge&logo=databricks)](https://credentials.databricks.com/159633769)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://rijul.cloud)
+[![Live Portfolio](https://img.shields.io/badge/Live-Portfolio-brightgreen?style=for-the-badge&logo=amazonaws)](https://rijul.cloud)
 
-> **Lead Data Engineer at Mars Snacking with 14+ years of experience, transitioning to Cloud Solutions Architect role**
+> **Lead Data Engineer at Mars Snacking with 15+ years of experience and a focus on Cloud Solutions Architecture.**
 
 ## 🌟 Overview
 
-This repository contains the source code for my professional portfolio website, highlighting my experience as a **Lead Data Engineer** and **Cloud Solutions Architect**. The site showcases real-world projects involving modern data platforms like Databricks, Snowflake, AWS cloud infrastructure, and enterprise-scale analytics solutions.
+This repository contains the static source for [rijul.cloud](https://rijul.cloud), a professional portfolio covering data engineering, cloud architecture, analytics platforms, and infrastructure automation. The site includes a homepage, resume, contact form, and eight detailed project case studies.
 
 ### 🎯 Key Highlights
-- **Lead Data Engineer at Mars Snacking** with 14+ years of experience
-- **Dual Certifications**: AWS Solutions Architect + Databricks Data Engineer Associate
-- **Modern Data Stack**: Databricks, Snowflake, dbt, GitHub CI/CD workflows
-- **Big Data Engineering** experience processing 6+ billion records
-- **8 Major Projects** with detailed case studies and measurable business impact
-- **DevOps & Infrastructure as Code** using Terraform and CI/CD pipelines
-- **Machine Learning & Analytics** solutions with 85%+ accuracy rates
+- Lead Data Engineer at Mars Snacking with 15+ years of experience
+- AWS Certified Solutions Architect and Databricks Certified Data Engineer Associate
+- Eight case studies spanning big data, retail analytics, machine learning, AWS, and IaC
+- Project examples include processing 6B+ pricing records and a text-classification solution with 85% accuracy
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- **HTML5** - Semantic markup and accessibility
-- **CSS3** - Responsive design with Bootstrap framework
-- **JavaScript** - Interactive elements and animations
-- **AOS Library** - Smooth scroll animations
+- HTML5, CSS3, and JavaScript
+- Bootstrap, jQuery, and AOS for responsive layout and interactions
+- Boxicons and IcoFont icons; locally bundled vendor assets
 
 ### Infrastructure & Deployment
-- **AWS Amplify** - Static website hosting and CI/CD
-- **Progressive Web App (PWA)** - Installable web application
-- **SEO Optimized** - Meta tags, sitemap, and structured data
+- AWS Amplify Hosting with an Amplify-managed CloudFront distribution
+- Route 53 DNS delegation and AWS Certificate Manager TLS
+- GitHub-connected deployment from the `main` branch
+- Web app manifest, sitemap, and `robots.txt`
+- Formspree contact form protected by Cloudflare Turnstile
 
 ### Tools & Technologies Featured
-- **Cloud Platforms**: AWS (VPC, EC2, RDS, S3), Databricks
-- **Modern Data Stack**: Databricks, Snowflake, dbt (data build tool)
-- **Big Data**: Hadoop, Apache Spark, Apache Pig, Hive
-- **Databases**: Snowflake, Exasol (In-Memory MPP), Traditional RDBMS
-- **Programming**: Python, SQL, Lua Scripts
-- **Data Integration**: Alteryx, Adobe APIs, ETL Pipelines
-- **DevOps**: Terraform, GitHub CI/CD Workflows, Infrastructure as Code
-- **Machine Learning**: PySpark, Topic Modeling, Text Classification
-- **Current Role**: Lead Data Engineer at Mars Snacking
+- **Cloud**: AWS (Amplify, CloudFront, Route 53, Lambda, S3, VPC, EC2, RDS)
+- **Data platforms**: Databricks, Snowflake, dbt, Hadoop, Hive, Exasol
+- **Engineering**: Python, SQL, Apache Spark/PySpark, Apache Pig, Alteryx, Lua
+- **Delivery**: Terraform, CloudFormation, GitHub Actions, CI/CD
+- **Analytics**: Retail media bidding, retail execution reporting, CRM analytics, NLP
 
 ## 📁 Project Structure
 
 ```
-rijul-portfolio/
-├── 📄 index.html              # Main landing page (Home, About, Resume, Projects, Contact)
-├── 📄 404.html                # Custom error page
-├── 🌐 favicon.ico             # Site favicon
-├── 📄 manifest.json           # PWA configuration
-├── 📄 sitemap.xml             # SEO sitemap
-├── 📄 robots.txt              # Search engine directives
-├── ⚙️ customHttp.yml          # Custom HTTP headers (AWS Amplify)
-├── 📁 assets/
-│   ├── 🎨 css/                # Stylesheets
-│   ├── 🖼️ img/                # Images and icons
-│   ├── ⚡ js/                 # JavaScript files
-│   ├── 📚 vendor/             # Third-party libraries
-│   └── 📋 Rijul_Sahu.pdf      # Resume/CV
-└── 📁 projects/
-    ├── 📊 Hadoop.html         # Big Data Analytics Project
-    ├── 🔄 DI.html             # Data Integration Solution
-    ├── 💾 Exasol.html         # CRM Analytics Automation
-    ├── 🤖 Topic_Modeling.html # ML Text Classification
-    ├── 🏗️ Terraform.html      # Infrastructure as Code
-    ├── 📈 Bid_Optimization.html   # Retail Media Bid Optimization Platform
-    ├── 🏬 Retail_Store_POS.html   # Retail Execution Data Mart (dbt)
-    └── 🌐 My_Static_Website.html  # AWS Amplify Static Hosting Architecture
+website-data/
+├── index.html                 # Home, about, resume, projects, contact
+├── 404.html                   # Custom not-found page
+├── customHttp.yml              # Amplify security response headers
+├── manifest.json               # Installable web app metadata
+├── robots.txt
+├── sitemap.xml
+├── favicon.ico
+├── .github/workflows/
+│   └── update-resume-date.yml  # Updates the resume date on the qa branch
+├── assets/
+│   ├── css/                    # Site styles
+│   ├── fonts/                  # Local fonts
+│   ├── img/                    # Site and project images
+│   ├── js/                     # Site behavior
+│   ├── thumbnails/             # Project thumbnails
+│   ├── vendor/                 # Frontend libraries
+│   └── Rijul_Sahu.pdf          # Resume
+└── projects/                  # Eight project case studies
 ```
 
 ## 🚀 Featured Projects
 
-### 1. 📊 Big Data Analytics with Hadoop
-**Challenge**: Process 6+ billion competitor pricing records for global analytics  
-**Solution**: 6-node Hadoop cluster with Spark, Pig, and Hive  
-**Impact**: 83% reduction in processing time, $150K annual savings
+1. [**Big Data Analytics with Hadoop**](projects/Hadoop.html) — Built a six-node Hadoop analytics platform processing 6B+ pricing records; reduced turnaround time by 83% and reported $150K in annual savings.
+2. [**Data Integration using Python & Alteryx**](projects/DI.html) — Replaced a Syntasa-based Adobe Analytics integration with Python, Alteryx, and Exasol; automated daily delivery with no manual steps.
+3. [**Exasol CRM Analytics Automation**](projects/Exasol.html) — Automated CRM retention reporting with Lua and Exasol, reducing report time from 45 minutes to 4 minutes and manual effort by up to 98%.
+4. [**Topic Modelling & Text Classification**](projects/Topic_Modeling.html) — Built a distributed PySpark text pipeline achieving 85% classification accuracy, with processing in about three minutes.
+5. [**Terraform AWS Infrastructure**](projects/Terraform.html) — Created reusable Terraform templates for a VPC, two subnets, EC2, and RDS, integrated with CI/CD. [Source repository](https://github.com/rijulsahu/vpc-2subnets-ec2-rds).
+6. [**Retail Media Bid Optimization**](projects/Bid_Optimization.html) — Orchestrated nine AWS Lambda functions across SKAI, Snowflake, and Databricks for a weekly keyword-level ROAS optimization workflow, including manual retailer uploads.
+7. [**Retail Execution Data Mart for SAAG Reporting**](projects/Retail_Store_POS.html) — Consolidated reporting into a dbt/Snowflake mart with 14 KPIs, three timeframes, and Kroger and Walmart fiscal calendars.
+8. [**AWS Amplify Website Hosting**](projects/My_Static_Website.html) — This portfolio’s hosting design: Amplify, Route 53 DNS delegation, CloudFront, ACM-managed TLS, and GitHub deployment.
 
-### 2. 🔄 Data Integration using Python & Alteryx
-**Challenge**: Replace legacy Syntasa platform for Adidas/Reebok analytics  
-**Solution**: Python + Alteryx pipeline with Adobe API integration  
-**Impact**: Eliminated vendor dependency, 98% less manual intervention
+## 🔗 Related Repositories
 
-### 3. 💾 Exasol CRM Analytics Automation
-**Challenge**: Manual CRM reporting across multiple brands and regions  
-**Solution**: Automated Lua scripts in Exasol in-memory database  
-**Impact**: 91% time reduction (45 min → 4 min), 98% less manual work
+These are separate projects in addition to this website repository:
 
-### 4. 🤖 Topic Modeling & Text Classification
-**Challenge**: Categorize large volumes of customer chat data  
-**Solution**: PySpark-based ML pipeline with 85%+ accuracy  
-**Impact**: 3-minute processing time, automated topic categorization
-
-### 5. 🏗️ Terraform Infrastructure Automation
-**Challenge**: Manual AWS resource deployment for European food delivery company  
-**Solution**: Reusable Terraform templates for VPC, EC2, RDS deployment  
-**Impact**: Full CI/CD DevOps implementation, eliminated manual errors
-
-### 6. 📈 Retail Media Bid Optimization Platform
-**Challenge**: Manual, delayed keyword-level bid management across retail media retailers  
-**Solution**: Event-driven serverless AWS Lambda + Databricks ML pipeline integrating SKAI, Snowflake  
-**Impact**: Automated weekly data-to-bid cycle across API and manual retailer workflows
-
-### 7. 🏬 Consolidated Retail Execution Data Mart (dbt)
-**Challenge**: Fragmented brand/category/store/item-level tables for SAAG reporting  
-**Solution**: Single consolidated dbt mart with 14 KPI metrics across retailer fiscal calendars  
-**Impact**: Reduced redundancy, improved query performance for BI and Agentic AI consumption
-
-### 8. 🌐 Static Website Hosting Architecture on AWS Amplify
-**Challenge**: Low-maintenance, secure hosting for a custom-domain (Hostinger) static site  
-**Solution**: AWS Amplify + Route 53 DNS delegation + CloudFront + ACM-managed TLS + GitHub CI/CD  
-**Impact**: Fully automated, serverless push-to-deploy hosting with zero infrastructure to manage
+- [SKAI API Code Base](https://github.com/rijulsahu/skai-api-code-base) — Python tooling for SKAI OAuth2, reports, and bulk updates; related to the retail media case study.
+- [AWS VPC & EC2 Deployments](https://github.com/rijulsahu/vpc-2subnets-ec2-rds) — Terraform/OpenTofu examples for EC2 deployment and VPC best practices.
 
 ## 🌐 AWS Amplify Deployment Guide
 
-### Prerequisites
-- AWS Account with appropriate permissions
-- Git repository (GitHub, GitLab, or Bitbucket)
-- Domain name (optional, for custom domain)
+The site is a static HTML/CSS/JavaScript project and does not require a framework build. Its current hosting configuration is:
 
-### Step 1: Prepare Your Repository
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/rijul-portfolio.git
-cd rijul-portfolio
+- Amplify Hosting is connected to this GitHub repository and deploys the `main` branch.
+- The domain is registered with Hostinger; DNS is delegated to an Amplify-managed Route 53 hosted zone.
+- Amplify provisions the CloudFront distribution and ACM certificate for HTTPS.
+- [customHttp.yml](customHttp.yml) configures response security headers.
+- No application environment variables are required. The contact form uses Formspree and Cloudflare Turnstile.
 
-# Ensure all files are committed
-git add .
-git commit -m "Ready for AWS Amplify deployment"
-git push origin main
-```
+To deploy a fork, connect its repository and production branch in AWS Amplify, set the app root to the repository root, and attach a domain through Amplify's domain management. For a custom domain registered elsewhere, follow the DNS delegation/validation values shown in the Amplify console rather than reusing this site's DNS records.
 
-### Step 2: Create Amplify App
-1. **Login to AWS Console**
-   - Navigate to AWS Amplify service
-   - Click "Get Started" under "Host your web app"
-
-2. **Connect Repository**
-   - Select your Git provider (GitHub/GitLab/Bitbucket)
-   - Authorize AWS Amplify to access your repositories
-   - Select your portfolio repository
-   - Choose the `main` branch
-
-### Step 3: Configure Build Settings
-```yaml
-# amplify.yml (auto-generated, but you can customize)
-version: 1
-frontend:
-  phases:
-    build:
-      commands:
-        - echo "No build process required for static site"
-  artifacts:
-    baseDirectory: /
-    files:
-      - '**/*'
-  cache:
-    paths: []
-```
-
-### Step 4: Deploy Configuration
-1. **App Name**: `rijul-portfolio` (or your preferred name)
-2. **Environment**: `production`
-3. **Build Settings**: Use default (no build process needed)
-4. **Advanced Settings**:
-   - **Root Directory**: Leave empty (deploy from root)
-   - **Build Command**: Not required
-   - **Output Directory**: Not required
-
-### Step 5: Custom Domain Setup (Optional)
-1. **Add Domain**
-   - Go to "Domain Management" in Amplify console
-   - Click "Add domain"
-   - Enter your domain (e.g., `rijul.cloud`)
-
-2. **DNS Configuration**
-   - Add CNAME record pointing to Amplify domain
-   - Or use Route 53 for automatic DNS management
-
-3. **SSL Certificate**
-   - Amplify automatically provisions SSL certificates
-   - HTTPS will be enabled by default
-
-### Step 6: Environment Variables (If Needed)
-```bash
-# In Amplify Console > App Settings > Environment Variables
-# Add any required environment variables
-# (None required for this static site)
-```
-
-### Step 7: Monitoring & Analytics
-1. **Enable Monitoring**
-   - CloudWatch metrics automatically enabled
-   - Monitor page views, performance, and errors
-
-2. **Custom Headers** (Optional)
-   ```json
-   {
-     "/**": {
-       "headers": {
-         "X-Frame-Options": "DENY",
-         "X-Content-Type-Options": "nosniff",
-         "Referrer-Policy": "strict-origin-when-cross-origin"
-       }
-     }
-   }
-   ```
+The workflow at `.github/workflows/update-resume-date.yml` is separate from production hosting: when the resume PDF changes on `qa`, it updates the date displayed in `index.html` and commits that change to `qa`.
 
 ## 🔧 Local Development
 
 ### Setup
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/rijul-portfolio.git
-cd rijul-portfolio
+# Clone the repository and enter its directory
+git clone https://github.com/rijulsahu/website-data.git
+cd website-data
 
-# Serve locally (using Python)
+# Start a local static web server
 python -m http.server 8000
-
-# Or using Node.js
-npx serve .
-
-# Or using PHP
-php -S localhost:8000
 ```
 
-### File Structure Guidelines
-- Keep all assets in the `assets/` directory
-- Project pages go in the `projects/` directory
-- Use relative paths for all internal links
-- Optimize images for web (WebP format recommended)
+Open <http://localhost:8000>. Project pages and assets use relative paths, so serve the repository root rather than opening individual HTML files directly.
 
 ## 📈 Performance Optimizations
 
-### ✅ Implemented
-- **Minified CSS/JS** - Reduced file sizes
-- **Optimized Images** - Compressed project images
-- **CDN Delivery** - AWS CloudFront integration via Amplify
-- **Gzip Compression** - Automatic compression
-- **Browser Caching** - Optimized cache headers
-- **Progressive Web App** - Installable, offline-capable
+- Static files are delivered through Amplify Hosting and its CloudFront distribution.
+- Project thumbnails use lazy loading on the homepage.
+- The repository includes a web app manifest for supported install experiences; it does not include a service worker or offline caching.
 
 ### 🎯 SEO Features
-- **Meta Tags** - Comprehensive SEO metadata
-- **Structured Data** - Schema.org markup
-- **Sitemap** - XML sitemap for search engines
-- **Robots.txt** - Search engine directives
-- **Open Graph** - Social media sharing optimization
+- Page titles and descriptions are defined in the HTML pages.
+- `sitemap.xml` and `robots.txt` are included.
 
 ## 🔒 Security Features
 
-- **HTTPS Enforced** - SSL/TLS encryption
-- **Security Headers** - XSS protection, content type validation
-- **No Sensitive Data** - Client-side only, no backend secrets
-- **Input Validation** - Sanitized contact forms
-
-## 📊 Analytics & Monitoring
-
-### AWS CloudWatch Metrics
-- Page views and unique visitors
-- Geographic distribution
-- Device and browser analytics
-- Performance metrics (load times)
-- Error tracking and 404 monitoring
-
-### Performance Benchmarks
-- **Lighthouse Score**: 95+ (Performance, Accessibility, SEO)
-- **Page Load Time**: < 2 seconds
-- **First Contentful Paint**: < 1.5 seconds
-- **Mobile Responsive**: 100% compatible
+- HTTPS is provided by Amplify-managed TLS.
+- [customHttp.yml](customHttp.yml) sets HSTS, Content Security Policy, frame/content-type protections, Referrer-Policy, Cross-Origin-Opener-Policy, and Permissions-Policy headers.
+- Contact submissions are sent to Formspree; Cloudflare Turnstile is used for bot protection.
+- Do not add private credentials or API tokens to this static repository.
 
 ## 🤝 Contributing
 
-While this is a personal portfolio, suggestions and improvements are welcome!
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Create a Pull Request
+This is a personal portfolio. Suggestions and corrections are welcome through GitHub issues or pull requests. Keep project content consistent with the linked case studies and avoid committing credentials, generated deployment state, or private documents.
 
 ## 💼 Current Role & Certifications
 
-**Lead Data Engineer at Mars Snacking**
-- Leading data transformation initiatives and analytics platform development
-- Architecting cloud-based data ecosystems using modern data stack
-- Managing cross-functional teams and driving digital transformation projects
+**Lead Data Engineer at Mars Snacking** with 14+ years of experience. Current focus areas include data and analytics platform architecture, high-volume ingestion and transformation, performance and cost optimization, infrastructure as code, and technical leadership.
 
-**Professional Certifications:**
-- 🏆 **Databricks Certified Data Engineer** (Expires September 01, 2027)
-- 🏆 **AWS Certified Solutions Architect** (Expires August 01, 2029)
+**Certifications:**
+- [AWS Certified Solutions Architect](https://www.credly.com/badges/517e7ddb-d863-4751-af60-fd476dd92cb6/public_url)
+- [Databricks Certified Data Engineer Associate](https://credentials.databricks.com/159633769)
 
 ## 📞 Contact
 
@@ -300,10 +144,8 @@ While this is a personal portfolio, suggestions and improvements are welcome!
 💼 **LinkedIn**: [rijul-sahu](https://www.linkedin.com/in/rijul-sahu-242b59129)  
 📧 **Email**: [rijulsahu@duck.com](mailto:rijulsahu@duck.com) *(Business inquiries only)*  
 🔗 **Stack Overflow**: [rijul-sahu](https://stackoverflow.com/users/2831370/rijul-sahu)  
-🎯 **Career Goal**: Transitioning to Cloud Solutions Architect role
+💻 **GitHub**: [rijulsahu](https://github.com/rijulsahu)
 
 ---
 
-⭐ **Star this repository if you found it helpful!**
-
-*Built with ❤️ using modern web technologies and deployed on AWS Amplify*
+*Portfolio source: [github.com/rijulsahu/website-data](https://github.com/rijulsahu/website-data) · Hosted on AWS Amplify.*
